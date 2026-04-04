@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semin Seo — IT Portfolio</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===================== MAIN PAGE ===================== -->
+<!-- ==================== MAIN PAGE ==================== -->
+<div id="main-page" class="page active">
+  <nav>
+    <div class="logo" onclick="showPage('main')">Xemlog.</div>
+    <ul>
+      <li><a onclick="showPage('main')">Work</a></li>
+      <li><a href="#about-section">About</a></li>
+      <li><a href="#contact-section">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div>
+      <div class="section-label fade">Platform Planner · UX-Driven Service Designer</div>
+      <h1 class="hero-title fade">Hello,<br>I'm <span>Semin</span><br>Seo.</h1>
+      <br><p class="hero-desc">사용자 플로우를 설계하고,<br>데이터로 인사이트를 도출하며,<br>개발 요구사항으로 연결하는 플랫폼 기획자입니다.</p>
+      <span class="hero-arrow">View my work &nbsp;↓</span>
+    </div>
+    <div class="hero-grid-col">
+      <p class="grid-intro fade"> Offline mode: A few things you won't find in my resume. <br><span> Click! ↓</span></p>
+      <div class="fade hero-photo-grid">
+        <div class="photo-cell" data-fact="집중모드 ON. 혼자 주식 자동화 툴 만들거나, 재테크 공부하거나, 블로그 쓰거나. 🎧">
+          <div class="cell-inner">
+            <div class="cell-front"><span>VIBE</span></div>
+            <div class="cell-back" style="background-image:url('image/VIBE.jpg')"></div>
+          </div>
+        </div>
+        <div class="photo-cell" data-fact="부산 토박이입니다. 제 2의 고향은 필리핀. 한평생 바다에 살았지만 수영은 개헤엄도 못 합니다. 돼지 국밥 맛집 문의는 sjtpals0111@gmail.com ">
+          <div class="cell-inner">
+            <div class="cell-front"><span>PLACE</span></div>
+            <div class="cell-back" style="background-image:url('image/PLACE.jpg')"></div>
+          </div>
+        </div>
+        <div class="photo-cell" data-fact="[지킬박사 앤 하이드] 우리는 나 자신을 잘 알고 있으며 '완벽한 통제'가 가능하다는 착각에 빠지기도 하지요! 🧪 
+          저는 완벽함을 연기하는 지킬보다, 결국 통제에 실패하고 무너지는 그의 인간적인 유약함에 더 큰 위로를 받습니다. 스스로를 다 안다고 자만하기보다, 내 안의 수많은 목소리에 귀를 기울여야 한다는 것을 이 고전은 늘 속삭여주거든요. ">
+          <div class="cell-inner">
+            <div class="cell-front"><span>BOOK</span></div>
+            <div class="cell-back" style="background-image:url('image/BOOK.jpg')"></div>
+          </div>
+        </div>
+        <div class="photo-cell" data-fact="평소엔 컴퓨터 앞에만 앉아있지만 감성 충만 소녀랍니다^^ 🌸">
+          <div class="cell-inner">
+            <div class="cell-front"><span>SEASON</span></div>
+            <div class="cell-back" style="background-image:url('image/SEASON.jpg')"></div>
+          </div>
+        </div>
+        <div class="photo-cell" data-fact="">
+          <div class="cell-inner">
+            <div class="cell-front"><span>ME</span></div>
+            <div class="cell-back" style="background-image:url('image/ME.jpg')"></div>
+          </div>
+        </div>
+        <div class="photo-cell" data-fact="야구 시즌엔 많이 예민할 수 있어요. (feat. 롯데 자이언츠)">
+          <div class="cell-inner">
+            <div class="cell-front"><span>HOBBY</span></div>
+            <div class="cell-back" style="background-image:url('image/HOBBY.jpg')"></div>
+          </div>
+        </div>
+        <div class="photo-cell" data-fact="죽기 전에 꼭 먹고 싶은 음식 — 하가우. 딤섬집 앞에 줄 서는 건 저입니다 🥟">
+          <div class="cell-inner">
+            <div class="cell-front"><span>FOOD</span></div>
+            <div class="cell-back" style="background-image:url('image/FOOD.jpg')"></div>
+          </div>
+        </div>
+        <div class="photo-cell" data-fact="저질 체력의 제일 컨디션 좋을 때 최대 기록: 5km">
+          <div class="cell-inner">
+            <div class="cell-front"><span>DAILY</span></div>
+            <div class="cell-back" style="background-image:url('image/OUTFIT.jpg')"></div>
+          </div>
+        </div>
+        <div class="photo-cell" data-fact="TMI지만 제 퍼스널컬러는 봄웜입니다. 🌼">
+          <div class="cell-inner">
+            <div class="cell-front"><span>COLOR</span></div>
+            <div class="cell-back" style="background-image:url('image/COLOR.jpg')"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Fact Popup -->
+    <div id="fact-popup" class="fact-popup">
+      <div class="fact-popup-box">
+        <button class="fact-close" onclick="closeFact()">✕</button>
+        <p class="fact-label" id="fact-label"></p>
+        <p class="fact-text" id="fact-text"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project List -->
+  <section class="projects">
+    <div class="project-row fade" onclick="showPage('p01')">
+      <div class="proj-num">01</div>
+      <div>
+        <div class="proj-title">Amazon Vendor Security Analysis</div>
+        <div class="proj-summary">플랫폼 화면 구조 설계 + 사용자 플로우 기반 기획 문서 작성 — Figma 보안 대시보드 4개 화면 프로토타이핑 및 AS-IS/TO-BE 개선안 도출</div>
+        <div class="proj-tags">
+          <span class="tag">화면 구조 설계</span><span class="tag">Figma</span><span class="tag">사용자 플로우</span><span class="tag">AS-IS/TO-BE</span><span class="tag">5인 팀 프로젝트</span>
+        </div>
+      </div>
+      <div class="proj-arrow">→</div>
+    </div>
+    <div class="project-row fade" onclick="showPage('p02')">
+      <div class="proj-num">02</div>
+      <div>
+        <div class="proj-title">Channel Stuffing Detection</div>
+        <div class="proj-summary">대용량 매출 DB 분석으로 기간말 이상 패턴을 탐지 — 데이터 기반 인사이트를 비즈니스 리스크로 해석하고 개선 절차 설계</div>
+        <div class="proj-tags">
+          <span class="tag">데이터 기반 인사이트</span><span class="tag">Tableau</span><span class="tag">Oracle SQL</span><span class="tag">서비스 개선 분석</span>
+        </div>
+      </div>
+      <div class="proj-arrow">→</div>
+    </div>
+    <div class="project-row fade" onclick="showPage('p03')">
+      <div class="proj-num">03</div>
+      <div>
+        <div class="proj-title">Ac.com 숙소 예약 웹 만들기</div>
+        <div class="proj-summary">개발 요구사항 정의부터 기능 테스트까지 — 기획·개발 전 사이클을 직접 수행해 운영/개발 간 요구사항 구체화 역량 확보</div>
+        <div class="proj-tags">
+          <span class="tag">요구사항 구체화</span><span class="tag">Java</span><span class="tag">Spring MVC</span><span class="tag">기능 테스트</span>
+        </div>
+      </div>
+      <div class="proj-arrow">→</div>
+    </div>
+
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about-section">
+    <div>
+      <div class="about-quote">"Good UX starts with<br>understanding the flow."</div>
+      <p class="about-body">사용자 플로우를 설계하고, 데이터로 검증하며, <br>개발팀과 함께 구현하는 플랫폼 기획자. <br>레퍼런스 조사부터 요구사항 구체화까지, <br>기획의 전 과정을 직접 수행합니다.</p>
+      <div class="about-kws">
+        <div class="kw">UX-Oriented Platform Planner</div>
+        <div class="kw">Data-Driven Insight Producer</div>
+        <div class="kw">Dev-Biz Bridge Builder</div>
+      </div>
+      <p class="about-body" style="font-size:13px;color:#999;">인크로스 IT 플랫폼 기획 일경험 지원 중</p>
+    </div>
+    <div class="info-rows">
+      <div class="info-row"><div class="info-label">Education</div><div class="info-val">George Mason University <br>MIS, GPA 3.86 / Magna Cum Laude<br><span style="color:#bbb;">2022 — 2025</span></div></div>
+      <div class="info-row"><div class="info-label">Training</div><div class="info-val">클라우드 네이티브 풀스택 & DevOps 개발자 아카데미<br>Java · Spring · Oracle · JS<br><span style="color:#bbb;">2025 — 2026 · 1053hrs</span></div></div>
+      <div class="info-row"><div class="info-label">Certs</div><div class="info-val">SQLD · ADsP · 컴활 1급 · 전산회계 1급 · OPIc IH</div></div>
+      <div class="info-row"><div class="info-label">Stack</div><div class="info-val">Python · SQL · Tableau · Excel · Java · Spring · JS · Figma · AWS</div></div>
+      <div class="info-row"><div class="info-label">Language</div><div class="info-val">Korean (Native) · English (Advanced) · Chinese (Basic)</div></div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact-section">
+    <div class="contact-cta">I am thrilled to answer<br>your next project <span>→</span></div>
+    <div class="contact-right">
+      <span class="contact-email">sjtpals0111@gmail.com</span>
+      <span class="contact-resume">View Resume</span>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-copy">Semin Seo — 2025</div>
+    <div class="footer-links">
+      <a href="https://linkedin.com/in/semin-seo" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Semining">GitHub</a>
+    </div>
+  </footer>
+</div>
+
+<!-- ===================== PROJECT 01 ===================== -->
+
+<!-- ==================== PROJECT 01: Amazon ==================== -->
+<div id="p01-page" class="page">
+  <nav>
+    <div class="logo" onclick="showPage('main')">Semin Seo.</div>
+    <ul>
+      <li><a onclick="showPage('main')">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="detail-header">
+    <span class="back-btn" onclick="showPage('main')">← Work</span>
+    <span class="bc-sep">/</span>
+    <span class="bc-cur">Amazon Vendor Security Analysis</span>
+  </div>
+
+  <div class="detail-hero">
+    <div class="detail-num">01 · 5인 팀 프로젝트 · MIS330</div>
+    <h1 class="detail-title">Amazon Vendor<br>Security Analysis</h1>
+    <p class="detail-sub">AS-IS/TO-BE 프로세스 분석으로 서드파티 벤더 보안의 Pain Point를 진단하고, AI 자동화 기반 개선안과 Figma 보안 대시보드를 직접 설계했습니다.</p>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">POINT 3가지</div>
+    <div class="kia-grid">
+      <div class="kia-card">
+        <div class="kia-icon">Point 01</div>
+        <div class="kia-point">사용자 플로우 기반 화면 구조 설계</div>
+        <div class="kia-desc">AS-IS 프로세스에서 어떤 데이터가 누락되고, 어떤 지점이 취약한지를 직접 정의했습니다. 사용자 흐름을 먼저 그려야 의미 있는 대시보드가 나옵니다.</div>
+        <div class="kia-jd">JD — "플랫폼 화면 구조 설계 및 사용자 플로우 기반의 기획 문서 작성"</div>
+      </div>
+      <div class="kia-card">
+        <div class="kia-icon">Point 02</div>
+        <div class="kia-point">Pain Point → 개발 요구사항 구체화</div>
+        <div class="kia-desc">수동 스캔 비효율이라는 Pain Point를 문서화하고, AI 자동화 기반 TO-BE 모델로 연결해 개발 요구사항과 비용·시간 비교 분석까지 완성했습니다.</div>
+        <div class="kia-jd">JD — "운영/영업의 개발 요구사항 구체화 및 고도화"</div>
+      </div>
+      <div class="kia-card">
+        <div class="kia-icon">Point 03</div>
+        <div class="kia-point">Figma 프로토타이핑 + UX 검증</div>
+        <div class="kia-desc">보안 대시보드 4개 화면을 Figma로 직접 프로토타이핑하고 기능별 사용자 플로우를 검증했습니다. 이해관계자와의 의사결정 언어로 활용했습니다.</div>
+        <div class="kia-jd">JD — "신규/개선 기능 테스트 및 사용자 경험(UX) 검증"</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">Project Story</div>
+    <div class="star-wrap">
+      <div class="star-col">
+        <div class="star-item">
+          <div><div class="star-letter">S</div><div class="star-lsub">Situation</div></div>
+          <div>
+            <div class="star-headline">서드파티 벤더가 Amazon의 보안 사각지대였다</div>
+            <div class="star-body">Amazon은 MOVEit 등 서드파티 벤더에 고객 데이터 전송을 위탁하면서도, 벤더 보안 프로토콜을 능동적으로 모니터링하지 않았습니다. 내부 보안은 견고하나 외부 벤더가 전체 시스템의 사각지대로 작용했고, 이로 인해 연 $88,400의 수동 운영 비용이 발생하고 있었습니다.</div>
+          </div>
+        </div>
+        <div class="star-item">
+          <div><div class="star-letter">T</div><div class="star-lsub">Task</div></div>
+          <div>
+            <div class="star-headline">Pain Point를 진단하고, AI 기반 TO-BE를 설계하라</div>
+            <div class="star-body">5인 팀 프로젝트로 AS-IS 프로세스의 Pain Point(벤더 보안 사각지대·수동 운영 비효율)를 진단하고, AI 자동화 기반 TO-BE 모델과 보안 대시보드를 설계했습니다. 나는 Figma 프로토타이핑과 비용 분석을 담당했습니다.</div>
+          </div>
+        </div>
+        <div class="star-item">
+          <div><div class="star-letter">A</div><div class="star-lsub">Action</div></div>
+          <div>
+            <div class="star-headline">대시보드 설계 + AS-IS/TO-BE 비용 비교 분석</div>
+            <div class="star-body">Figma로 실시간 벤더 모니터링 대시보드 4개 화면(Login · Dashboard · Security Log · Alert Detail)을 프로토타이핑했습니다. 동시에 AS-IS 수동 운영 시간·비용과 TO-BE AI 자동화 이후의 절감 효과를 정량적으로 비교 분석했습니다.</div>
+            <div class="tool-tags">
+              <div class="tool-tag"><div class="tool-dot" style="background:#534AB7;"></div>Figma · 4개 화면 프로토타입</div>
+              <div class="tool-tag"><div class="tool-dot" style="background:#1D9E75;"></div>Excel · AS-IS/TO-BE 비용 분석</div>
+              <div class="tool-tag"><div class="tool-dot" style="background:#EF9F27;"></div>Lucidchart · 프로세스 플로우</div>
+            </div>
+          </div>
+        </div>
+        <div class="star-item">
+          <div><div class="star-letter">R</div><div class="star-lsub">Result</div></div>
+          <div>
+            <div class="star-headline">운영 시간 절반, 비용 $23,400 절감 방안 도출</div>
+            <div class="star-body" style="margin-bottom:16px;">AI 자동화 기반 TO-BE 전환 시 연간 운영 시간 50% 절감, 비용 $23,400 절약, 서드파티 보안 사각지대 제거 방안을 정량적으로 도출했습니다. Figma 프로토타입은 팀 내 의사결정과 발표의 핵심 산출물로 활용됐습니다.</div>
+            <div class="metric-row" style="grid-template-columns:1fr 1fr 1fr;">
+              <div class="metric-card"><div class="metric-num" style="color:#E24B4A;">50%</div><div class="metric-desc">연간 운영 시간 절감<br><span class="metric-sub">416h → 208h</span></div></div>
+              <div class="metric-card"><div class="metric-num" style="color:#1D9E75;">$23.4K</div><div class="metric-desc">연간 비용 절감<br><span class="metric-sub">$88,400 → $65,000</span></div></div>
+              <div class="metric-card"><div class="metric-num" style="color:#534AB7;">4개</div><div class="metric-desc">Figma 화면 설계<br><span class="metric-sub">Login · Dashboard · Log · Alert</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="info-card">
+          <div class="info-card-label">Project Info</div>
+          <div class="sinfo-rows">
+            <div class="sinfo-row"><div class="sinfo-label">Role</div><div class="sinfo-val">Figma 프로토타입<br>비용 분석</div></div>
+            <div class="sinfo-row"><div class="sinfo-label">Team</div><div class="sinfo-val">5인 그룹 프로젝트</div></div>
+            <div class="sinfo-row"><div class="sinfo-label">Tools</div><div class="sinfo-val">Figma · Excel<br>Lucidchart</div></div>
+            <div class="sinfo-row"><div class="sinfo-label">Course</div><div class="sinfo-val">MIS330 · GMU </div></div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-label">Tags</div>
+          <div class="tag-wrap">
+            <span class="tag">AS-IS/TO-BE</span><span class="tag">Figma</span><span class="tag">Cost Analysis</span><span class="tag">Process Design</span><span class="tag">Security</span><span class="tag">5인 팀</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">What I Learned</div>
+    <div class="insight-list">
+      <div class="insight-item">[ 화면을 설계하기 전에, '누가 무엇을 볼 수 없는가'를 먼저 물어야 한다 ]<br>
+Figma를 열기 전에 AS-IS 프로세스를 분석하면서 Amazon 보안팀이 제3자 벤더의 이상 행위를 실시간으로 볼 수 없다는 구조적 빈틈을 먼저 파악했습니다. 화면을 설계한다는 것은 UI를 그리는 일이 아니라, 누가 어떤 정보를 언제 봐야 하는지를 결정하는 일이라는 것을 이 프로젝트에서 처음 체감했습니다.</div>
+      <div class="insight-item">[ 요구사항은 수치로 끝맺어야 팀 내 합의가 된다 ]<br>
+"모니터링을 강화하자"는 방향만 있었을 때는 팀 내 논의가 계속 겉돌았습니다. "이상 탐지 후 30초 내 보안팀 알림, 발견사항 30일 이내 조치"처럼 수치로 기준을 세우자 요구사항 문서가 실제 검증 가능한 산출물이 되었습니다. 기능 요건에 수치가 없으면 개발자도 완료 기준이 없다는 것을 배웠습니다.</div>
+      <div class="insight-item">[ 비용 분석은 TO-BE 설계의 우선순위를 정하는 도구다 ]<br>
+AS-IS 연간 416시간·$88,400이라는 숫자는 단순 비교용이 아니었습니다. 수동 취약점 스캔·위협 분석·벤더 알림 각 항목이 얼마나 소요되는지 분해한 뒤에야 "무엇을 먼저 자동화할 것인가"를 결정할 수 있었습니다. 비용 데이터가 TO-BE의 기능 우선순위와 직접 연결되어야 한다는 것을 배웠습니다.</div>
+    </div>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">기획 문서 발췌 — Requirements & Screen Definition</div>
+
+    <div style="margin-bottom:28px;">
+      <div style="font-size:10px;font-weight:500;color:#aaa;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">Functional / Non-Functional Requirements</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;">
+        <div class="audit-item" style="border-color:#534AB7;">
+          <div class="audit-title">실시간 모니터링</div>
+          <div class="audit-desc">이상 행위 감지 즉시 보안팀 알림 (seconds 단위). 24시간 자동 감시 체계 구축. 모든 벤더 활동 실시간 추적.</div>
+        </div>
+        <div class="audit-item" style="border-color:#1D9E75;">
+          <div class="audit-title">정기 보안 감사 — 6개월 주기</div>
+          <div class="audit-desc">벤더 보안 준수 여부 정기 감사. 발견사항은 30일 이내 조치 완료 의무화. 미이행 시 계약 해지.</div>
+        </div>
+        <div class="audit-item" style="border-color:#EF9F27;">
+          <div class="audit-title">자동화 인시던트 대응</div>
+          <div class="audit-desc">위협 감지 → 자동 격리 → 해결까지 1시간 내 처리. 인시던트 로그(타임스탬프·영향 시스템·조치 내역) 자동 기록.</div>
+        </div>
+        <div class="audit-item" style="border-color:#aaa;">
+          <div class="audit-title">비기능 요구사항</div>
+          <div class="audit-desc">99.9% 가용성 · AES-256 / TLS 1.3 암호화 · ISO 27001, GDPR, PCI-DSS 준수.</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div style="font-size:10px;font-weight:500;color:#aaa;letter-spacing:0.1em;text-transform:uppercase;margin-bottom:12px;">화면 정의서 — Screen Definition (4 Screens)</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;">
+        <div class="kia-card" style="border-left:3px solid #534AB7;padding-left:18px;">
+          <div class="kia-icon">Screen 01 · Login Page</div>
+          <div class="kia-point" style="font-size:13px;margin-bottom:6px;">사용자 인증 화면</div>
+          <div class="kia-desc"><span style="color:#aaa;font-size:11px;">User Action</span><br>Email / Account ID + PW 입력 후 2단계 인증(2FA) 완료<br><br><span style="color:#aaa;font-size:11px;">Security Feature</span><br>MFA 적용 — 인가된 접근만 허용, 전체 접근 이력 감사 로그 기록</div>
+        </div>
+        <div class="kia-card" style="border-left:3px solid #1D9E75;padding-left:18px;">
+          <div class="kia-icon">Screen 02 · Dashboard Home</div>
+          <div class="kia-point" style="font-size:13px;margin-bottom:6px;">보안 현황 개요 화면</div>
+          <div class="kia-desc"><span style="color:#aaa;font-size:11px;">Displayed Information</span><br>Security Alerts 수 · 서버 운영 현황 · 위협 감지 트렌드 · 인시던트 유형별 분류<br><br><span style="color:#aaa;font-size:11px;">User Action</span><br>Security Log 탭으로 이동해 24h / 7d 이벤트 상세 조회</div>
+        </div>
+        <div class="kia-card" style="border-left:3px solid #EF9F27;padding-left:18px;">
+          <div class="kia-icon">Screen 03 · Security Log</div>
+          <div class="kia-point" style="font-size:13px;margin-bottom:6px;">이벤트 로그 조회 화면</div>
+          <div class="kia-desc"><span style="color:#aaa;font-size:11px;">Displayed Elements</span><br>날짜 · 시간 · 이벤트 유형 · 심각도 · Source IP · View Details<br><br><span style="color:#aaa;font-size:11px;">Filter / Action</span><br>Last 24h / Last 7d 필터 + 키워드 검색 → View Details 클릭 시 Alert 상세로 드릴다운</div>
+        </div>
+        <div class="kia-card" style="border-left:3px solid #E24B4A;padding-left:18px;">
+          <div class="kia-icon">Screen 04 · Security Alerts</div>
+          <div class="kia-point" style="font-size:13px;margin-bottom:6px;">경보 상세 화면</div>
+          <div class="kia-desc"><span style="color:#aaa;font-size:11px;">Displayed Information</span><br>Alert No. · IP / 지역 / 타임스탬프 · 탐지 위협 목록 (파일명 · 해시값 · 영향 시스템)<br><br><span style="color:#aaa;font-size:11px;">User Action</span><br>Isolate Vendor / Investigate / Mark Resolved 3단계 대응</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dsection" style="border-bottom:none;">
+    <div class="sec-label">Figma Prototype — 4 screens</div>
+    <div class="proto-wrap">
+      <div style="display:flex;background:#0d0f18;font-family:'DM Sans',sans-serif;min-height:520px;">
+        <div style="width:162px;flex-shrink:0;background:#0a0c14;border-right:0.5px solid rgba(255,255,255,0.07);display:flex;flex-direction:column;">
+          <div style="padding:14px 12px 10px;border-bottom:0.5px solid rgba(255,255,255,0.07);">
+            <div style="display:flex;align-items:center;gap:6px;">
+              <div style="width:18px;height:18px;background:#FF9900;border-radius:4px;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="9" height="9" viewBox="0 0 12 12" fill="none"><rect x="1" y="1" width="4" height="4" rx="1" fill="#0a0c14"/><rect x="7" y="1" width="4" height="4" rx="1" fill="#0a0c14"/><rect x="1" y="7" width="4" height="4" rx="1" fill="#0a0c14"/><rect x="7" y="7" width="4" height="4" rx="1" fill="#0a0c14"/></svg></div>
+              <span style="font-size:9px;font-weight:500;color:#fff;">Amazon SecOps</span>
+            </div>
+            <div style="font-size:7px;color:#5F5E5A;margin-top:2px;padding-left:24px;">Figma Prototype</div>
+          </div>
+          <div style="padding:10px 7px 6px;">
+            <div style="font-size:7px;font-weight:500;letter-spacing:0.1em;color:#3a3a3a;text-transform:uppercase;margin-bottom:5px;padding:0 3px;">Screens</div>
+            <div style="display:flex;flex-direction:column;gap:1px;">
+              <div class="pnav-item active" id="pnav-0" onclick="ps(0)"><span class="pnav-num">01</span><span class="pnav-lbl">Login Page</span><span class="pnav-dot"></span></div>
+              <div class="pnav-item" id="pnav-1" onclick="ps(1)"><span class="pnav-num">02</span><span class="pnav-lbl">Dashboard</span><span class="pnav-dot"></span></div>
+              <div class="pnav-item" id="pnav-2" onclick="ps(2)"><span class="pnav-num">03</span><span class="pnav-lbl">Security Log</span><span class="pnav-dot"></span></div>
+              <div class="pnav-item" id="pnav-3" onclick="ps(3)"><span class="pnav-num">04</span><span class="pnav-lbl">Alert Detail</span><span class="pnav-dot"></span></div>
+            </div>
+          </div>
+          <div style="padding:6px 7px;margin-top:3px;">
+            <div style="height:0.5px;background:rgba(255,255,255,0.05);margin-bottom:8px;"></div>
+            <div style="font-size:7px;font-weight:500;letter-spacing:0.1em;color:#3a3a3a;text-transform:uppercase;margin-bottom:5px;padding:0 3px;">App Nav</div>
+            <div style="display:flex;flex-direction:column;gap:1px;">
+              <div class="pnav-sub" style="background:rgba(255,153,0,0.1);"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><rect x="1" y="1" width="4" height="4" rx="1" fill="#FF9900"/><rect x="7" y="1" width="4" height="4" rx="1" fill="#FF9900"/><rect x="1" y="7" width="4" height="4" rx="1" fill="#FF9900"/><rect x="7" y="7" width="4" height="4" rx="1" fill="#FF9900"/></svg><span style="font-size:8px;color:#FF9900;">Overview</span></div>
+              <div class="pnav-sub"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><circle cx="6" cy="6" r="4" stroke="#5F5E5A" stroke-width="1.1"/></svg><span style="font-size:8px;color:#5F5E5A;">Real-time Monitor</span></div>
+              <div class="pnav-sub"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M6 1.5L1.5 10h9L6 1.5z" stroke="#5F5E5A" stroke-width="1.1" stroke-linejoin="round"/></svg><span style="font-size:8px;color:#5F5E5A;">Vendor Compliance</span></div>
+              <div class="pnav-sub"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><path d="M1.5 9l2.5-3.5 2.5 1.5 3.5-5" stroke="#5F5E5A" stroke-width="1.1" stroke-linecap="round"/></svg><span style="font-size:8px;color:#5F5E5A;">Analytics</span></div>
+              <div class="pnav-sub"><svg width="10" height="10" viewBox="0 0 12 12" fill="none"><rect x="1.5" y="3.5" width="9" height="6.5" rx="1" stroke="#5F5E5A" stroke-width="1.1"/><path d="M4 3.5V2.5a2 2 0 014 0v1" stroke="#5F5E5A" stroke-width="1.1"/></svg><span style="font-size:8px;color:#5F5E5A;">Incident Response</span></div>
+            </div>
+          </div>
+          <div style="margin-top:auto;padding:10px 12px;border-top:0.5px solid rgba(255,255,255,0.05);"><div style="font-size:7px;color:#5F5E5A;">Security Analyst</div><div style="font-size:9px;color:#B4B2A9;font-weight:500;margin-top:1px;">Semin Seo</div></div>
+        </div>
+        <div style="flex:1;min-width:0;display:flex;flex-direction:column;">
+          <div id="ps0" class="scr active" style="flex:1;align-items:center;justify-content:center;background:#0d0f18;">
+            <div style="width:240px;display:flex;flex-direction:column;align-items:center;">
+              <div style="margin-bottom:20px;text-align:center;"><div style="font-size:22px;font-weight:700;color:#fff;letter-spacing:-1px;">amazon</div><div style="width:32px;height:2.5px;background:#FF9900;border-radius:2px;margin:4px auto 0;"></div><div style="font-size:8px;color:#5F5E5A;margin-top:6px;letter-spacing:0.05em;">Security Operations Center</div></div>
+              <div style="width:100%;background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:7px;padding:18px;display:flex;flex-direction:column;gap:9px;">
+                <div><div style="font-size:8px;color:#888780;margin-bottom:3px;font-weight:500;">Email / Account ID</div><div style="border:0.5px solid rgba(255,255,255,0.1);border-radius:4px;padding:6px 9px;background:rgba(255,255,255,0.03);font-size:9px;color:#5F5E5A;">admin@amazon-secops.com</div></div>
+                <div><div style="font-size:8px;color:#888780;margin-bottom:3px;font-weight:500;">Password</div><div style="border:0.5px solid rgba(255,255,255,0.1);border-radius:4px;padding:6px 9px;background:rgba(255,255,255,0.03);font-size:9px;color:#5F5E5A;letter-spacing:0.2em;">••••••••••</div></div>
+                <div><div style="font-size:8px;color:#888780;margin-bottom:3px;font-weight:500;">Two-step verification</div><div style="border:0.5px solid #FF9900;border-radius:4px;padding:6px 9px;background:rgba(255,153,0,0.06);font-size:9px;color:#FF9900;">Enter 6-digit code</div></div>
+                <div style="background:#FF9900;border-radius:4px;padding:7px;text-align:center;cursor:pointer;" onclick="ps(1)"><span style="font-size:9px;font-weight:500;color:#fff;">Sign In</span></div>
+              </div>
+              <div style="margin-top:12px;display:flex;align-items:center;gap:5px;"><div style="width:5px;height:5px;border-radius:50%;background:#1D9E75;"></div><span style="font-size:8px;color:#5F5E5A;">System operational · PCI DSS compliant</span></div>
+            </div>
+          </div>
+          <div id="ps1" class="scr" style="flex:1;flex-direction:column;background:#0d0f18;">
+            <div style="padding:9px 16px;border-bottom:0.5px solid rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:space-between;"><div><div style="font-size:11px;font-weight:500;color:#fff;">Amazon Vendor Security Dashboard</div><div style="font-size:8px;color:#5F5E5A;margin-top:1px;">Third-party vendor risk monitoring</div></div><div style="display:flex;gap:4px;"><div style="padding:3px 7px;border-radius:20px;border:0.5px solid rgba(255,255,255,0.1);font-size:7px;color:#888780;">Last 24 Hours</div><div style="padding:3px 7px;border-radius:20px;background:#1D9E75;font-size:7px;color:#fff;font-weight:500;">Auto Refresh</div></div></div>
+            <div style="flex:1;overflow-y:auto;padding:12px 16px;display:flex;flex-direction:column;gap:9px;">
+              <div style="display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;">
+                <div style="background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:5px;padding:9px 10px;"><div style="font-size:7px;color:#888780;margin-bottom:4px;">Security Alerts</div><div style="font-size:18px;font-weight:500;color:#E24B4A;line-height:1;">3</div><div style="font-size:7px;color:#A32D2D;margin-top:2px;">+2 vs yesterday</div></div>
+                <div style="background:#1a1d27;border:2px solid #EF9F27;border-radius:5px;padding:9px 10px;"><div style="font-size:7px;color:#888780;margin-bottom:4px;">Vendor Compliance</div><div style="font-size:18px;font-weight:500;color:#EF9F27;line-height:1;">68%</div><div style="font-size:7px;color:#854F0B;margin-top:2px;">2 vendors at risk</div></div>
+                <div style="background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:5px;padding:9px 10px;"><div style="font-size:7px;color:#888780;margin-bottom:4px;">Security Score</div><div style="font-size:18px;font-weight:500;color:#1D9E75;line-height:1;">70%</div><div style="font-size:7px;color:#0F6E56;margin-top:2px;">4 servers operational</div></div>
+                <div style="background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:5px;padding:9px 10px;"><div style="font-size:7px;color:#888780;margin-bottom:4px;">TO-BE 전환율</div><div style="font-size:18px;font-weight:500;color:#534AB7;line-height:1;">42%</div><div style="font-size:7px;color:#3C3489;margin-top:2px;">$23,400 절감 진행</div></div>
+              </div>
+              <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:7px;">
+                <div style="background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:5px;padding:10px 12px;"><div style="font-size:9px;font-weight:500;color:#fff;margin-bottom:8px;">Vendor Compliance Status</div><div style="display:grid;grid-template-columns:1.2fr 0.9fr 0.7fr 0.7fr 0.8fr;gap:3px;padding:3px 0;border-bottom:0.5px solid rgba(255,255,255,0.06);margin-bottom:2px;"><span style="font-size:7px;color:#5F5E5A;">Vendor</span><span style="font-size:7px;color:#5F5E5A;">Last Audit</span><span style="font-size:7px;color:#5F5E5A;">Next</span><span style="font-size:7px;color:#5F5E5A;">Issues</span><span style="font-size:7px;color:#5F5E5A;">Status</span></div><div style="display:grid;grid-template-columns:1.2fr 0.9fr 0.7fr 0.7fr 0.8fr;gap:3px;padding:5px 0;border-bottom:0.5px solid rgba(255,255,255,0.04);align-items:center;"><span style="font-size:8px;color:#fff;">MOVEit</span><span style="font-size:7px;color:#888780;">2024.10.01</span><span style="font-size:7px;color:#E24B4A;font-weight:500;">D-12</span><span style="font-size:7px;color:#E24B4A;">3 open</span><span style="font-size:6px;padding:1px 4px;border-radius:2px;background:rgba(226,75,74,0.15);color:#E24B4A;border:0.5px solid rgba(226,75,74,0.3);">At Risk</span></div><div style="display:grid;grid-template-columns:1.2fr 0.9fr 0.7fr 0.7fr 0.8fr;gap:3px;padding:5px 0;border-bottom:0.5px solid rgba(255,255,255,0.04);align-items:center;"><span style="font-size:8px;color:#fff;">SentinelOne</span><span style="font-size:7px;color:#888780;">2025.01.15</span><span style="font-size:7px;color:#EF9F27;font-weight:500;">D-44</span><span style="font-size:7px;color:#EF9F27;">1 open</span><span style="font-size:6px;padding:1px 4px;border-radius:2px;background:rgba(239,159,39,0.15);color:#EF9F27;border:0.5px solid rgba(239,159,39,0.3);">Review</span></div><div style="display:grid;grid-template-columns:1.2fr 0.9fr 0.7fr 0.7fr 0.8fr;gap:3px;padding:5px 0;align-items:center;"><span style="font-size:8px;color:#fff;">AWS KMS</span><span style="font-size:7px;color:#888780;">2025.02.10</span><span style="font-size:7px;color:#1D9E75;font-weight:500;">D-71</span><span style="font-size:7px;color:#1D9E75;">0 open</span><span style="font-size:6px;padding:1px 4px;border-radius:2px;background:rgba(29,158,117,0.15);color:#1D9E75;border:0.5px solid rgba(29,158,117,0.3);">Compliant</span></div></div>
+                <div style="display:flex;flex-direction:column;gap:7px;">
+                  <div style="background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:5px;padding:10px 12px;flex:1;"><div style="font-size:9px;font-weight:500;color:#fff;margin-bottom:8px;">TO-BE 진행률</div><div style="display:flex;flex-direction:column;gap:6px;"><div><div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:7px;color:#888780;">실시간 모니터링</span><span style="font-size:7px;color:#1D9E75;font-weight:500;">80%</span></div><div style="height:3px;background:rgba(255,255,255,0.08);border-radius:2px;"><div style="height:100%;width:80%;background:#1D9E75;border-radius:2px;"></div></div></div><div><div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:7px;color:#888780;">컴플라이언스 감사</span><span style="font-size:7px;color:#EF9F27;font-weight:500;">50%</span></div><div style="height:3px;background:rgba(255,255,255,0.08);border-radius:2px;"><div style="height:100%;width:50%;background:#EF9F27;border-radius:2px;"></div></div></div><div><div style="display:flex;justify-content:space-between;margin-bottom:3px;"><span style="font-size:7px;color:#888780;">자동화 대응</span><span style="font-size:7px;color:#E24B4A;font-weight:500;">20%</span></div><div style="height:3px;background:rgba(255,255,255,0.08);border-radius:2px;"><div style="height:100%;width:20%;background:#E24B4A;border-radius:2px;"></div></div></div></div><div style="margin-top:8px;padding-top:6px;border-top:0.5px solid rgba(255,255,255,0.05);"><div style="display:flex;justify-content:space-between;margin-bottom:2px;"><span style="font-size:7px;color:#5F5E5A;">AS-IS</span><span style="font-size:7px;color:#E24B4A;font-weight:500;">$88,400</span></div><div style="display:flex;justify-content:space-between;"><span style="font-size:7px;color:#5F5E5A;">TO-BE</span><span style="font-size:7px;color:#1D9E75;font-weight:500;">$65,000</span></div></div></div>
+                  <div style="background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:5px;padding:10px 12px;"><div style="font-size:9px;font-weight:500;color:#fff;margin-bottom:7px;">Incident Timeline</div><div style="display:flex;flex-direction:column;gap:4px;"><div style="display:flex;gap:6px;align-items:flex-start;"><div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;"><div style="width:5px;height:5px;border-radius:50%;background:#E24B4A;margin-top:2px;"></div><div style="width:1px;height:10px;background:rgba(255,255,255,0.07);"></div></div><div><div style="font-size:8px;font-weight:500;color:#E24B4A;">00:00 Detected</div></div></div><div style="display:flex;gap:6px;align-items:flex-start;"><div style="display:flex;flex-direction:column;align-items:center;flex-shrink:0;"><div style="width:5px;height:5px;border-radius:50%;background:#EF9F27;margin-top:2px;"></div><div style="width:1px;height:10px;background:rgba(255,255,255,0.07);"></div></div><div><div style="font-size:8px;font-weight:500;color:#EF9F27;">00:08 Contained</div></div></div><div style="display:flex;gap:6px;"><div style="flex-shrink:0;"><div style="width:5px;height:5px;border-radius:50%;background:#1D9E75;margin-top:2px;"></div></div><div><div style="font-size:8px;font-weight:500;color:#1D9E75;">00:54 Resolved</div></div></div></div></div>
+                </div>
+              </div>
+              <div style="background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:5px;padding:10px 12px;"><div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:7px;"><span style="font-size:9px;font-weight:500;color:#fff;">Today's Security Alerts</span><div style="display:flex;gap:3px;"><span class="pbadge" style="background:rgba(226,75,74,0.15);color:#E24B4A;border:0.5px solid rgba(226,75,74,0.3);">New 2</span><span class="pbadge" style="background:rgba(239,159,39,0.15);color:#EF9F27;border:0.5px solid rgba(239,159,39,0.3);">Investigate 1</span></div></div><div style="display:grid;grid-template-columns:0.5fr 0.7fr 1fr 0.8fr 0.6fr 0.4fr;gap:4px;padding:3px 0;border-bottom:0.5px solid rgba(255,255,255,0.06);margin-bottom:2px;"><span style="font-size:7px;color:#5F5E5A;">ID</span><span style="font-size:7px;color:#5F5E5A;">Vendor</span><span style="font-size:7px;color:#5F5E5A;">Type</span><span style="font-size:7px;color:#5F5E5A;">Region</span><span style="font-size:7px;color:#5F5E5A;">Status</span><span style="font-size:7px;color:#5F5E5A;">Act</span></div><div style="display:grid;grid-template-columns:0.5fr 0.7fr 1fr 0.8fr 0.6fr 0.4fr;gap:4px;padding:5px 0;border-bottom:0.5px solid rgba(255,255,255,0.04);align-items:center;"><span style="font-size:8px;color:#fff;font-weight:500;">#127</span><span style="font-size:7px;color:#888780;">MOVEit</span><span style="font-size:7px;color:#888780;">Suspicious login</span><span style="font-size:7px;color:#888780;">us-west-2</span><span class="pbadge" style="background:rgba(226,75,74,0.15);color:#E24B4A;border:0.5px solid rgba(226,75,74,0.3);">New</span><span style="font-size:7px;color:#378ADD;cursor:pointer;" onclick="ps(3)">View</span></div><div style="display:grid;grid-template-columns:0.5fr 0.7fr 1fr 0.8fr 0.6fr 0.4fr;gap:4px;padding:5px 0;align-items:center;"><span style="font-size:8px;color:#fff;font-weight:500;">#126</span><span style="font-size:7px;color:#888780;">MOVEit</span><span style="font-size:7px;color:#888780;">Compliance fail</span><span style="font-size:7px;color:#888780;">us-east-1</span><span class="pbadge" style="background:rgba(239,159,39,0.15);color:#EF9F27;border:0.5px solid rgba(239,159,39,0.3);">Investigate</span><span style="font-size:7px;color:#378ADD;cursor:pointer;">View</span></div></div>
+            </div>
+          </div>
+          <div id="ps2" class="scr" style="flex:1;flex-direction:column;background:#0d0f18;">
+            <div style="padding:9px 16px;border-bottom:0.5px solid rgba(255,255,255,0.07);display:flex;align-items:center;justify-content:space-between;"><div><div style="font-size:11px;font-weight:500;color:#fff;">Security Log</div></div><div style="display:flex;gap:4px;"><div style="padding:3px 7px;border-radius:20px;background:rgba(255,153,0,0.15);border:0.5px solid rgba(255,153,0,0.3);font-size:7px;color:#FF9900;">Last 24 Hours</div><div style="background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:20px;padding:3px 9px;font-size:7px;color:#5F5E5A;">Search...</div></div></div>
+            <div style="flex:1;padding:12px 16px;"><div style="background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:5px;overflow:hidden;"><div style="display:grid;grid-template-columns:1.3fr 1fr 0.8fr 0.7fr 0.5fr 0.6fr;gap:5px;padding:7px 11px;background:rgba(255,255,255,0.03);border-bottom:0.5px solid rgba(255,255,255,0.06);"><span style="font-size:7px;color:#5F5E5A;font-weight:500;">Timestamp</span><span style="font-size:7px;color:#5F5E5A;">Event</span><span style="font-size:7px;color:#5F5E5A;">Vendor</span><span style="font-size:7px;color:#5F5E5A;">Account</span><span style="font-size:7px;color:#5F5E5A;">Severity</span><span style="font-size:7px;color:#5F5E5A;">Status</span></div><div style="display:grid;grid-template-columns:1.3fr 1fr 0.8fr 0.7fr 0.5fr 0.6fr;gap:5px;padding:8px 11px;border-bottom:0.5px solid rgba(255,255,255,0.04);align-items:center;background:rgba(226,75,74,0.04);border-left:2px solid #E24B4A;cursor:pointer;" onclick="ps(3)"><span style="font-size:8px;color:#fff;font-weight:500;">2025-03-15 14:22</span><span style="font-size:8px;color:#E24B4A;">Suspicious Login</span><span style="font-size:7px;color:#888780;">MOVEit</span><span style="font-size:7px;color:#888780;">#102345</span><span class="pbadge" style="background:rgba(226,75,74,0.2);color:#E24B4A;border:0.5px solid rgba(226,75,74,0.4);">High</span><span class="pbadge" style="background:rgba(226,75,74,0.15);color:#E24B4A;border:0.5px solid rgba(226,75,74,0.3);">New</span></div><div style="display:grid;grid-template-columns:1.3fr 1fr 0.8fr 0.7fr 0.5fr 0.6fr;gap:5px;padding:8px 11px;border-bottom:0.5px solid rgba(255,255,255,0.04);align-items:center;"><span style="font-size:8px;color:#B4B2A9;">2025-03-15 13:17</span><span style="font-size:8px;color:#EF9F27;">Compliance Fail</span><span style="font-size:7px;color:#888780;">MOVEit</span><span style="font-size:7px;color:#888780;">#102298</span><span class="pbadge" style="background:rgba(239,159,39,0.15);color:#EF9F27;border:0.5px solid rgba(239,159,39,0.3);">Med</span><span class="pbadge" style="background:rgba(239,159,39,0.15);color:#EF9F27;border:0.5px solid rgba(239,159,39,0.3);">Investigate</span></div><div style="display:grid;grid-template-columns:1.3fr 1fr 0.8fr 0.7fr 0.5fr 0.6fr;gap:5px;padding:8px 11px;border-bottom:0.5px solid rgba(255,255,255,0.04);align-items:center;"><span style="font-size:8px;color:#B4B2A9;">2025-03-15 11:54</span><span style="font-size:8px;color:#EF9F27;">API Rate Limit</span><span style="font-size:7px;color:#888780;">SentinelOne</span><span style="font-size:7px;color:#888780;">#98741</span><span class="pbadge" style="background:rgba(239,159,39,0.15);color:#EF9F27;border:0.5px solid rgba(239,159,39,0.3);">Med</span><span class="pbadge" style="background:rgba(226,75,74,0.15);color:#E24B4A;border:0.5px solid rgba(226,75,74,0.3);">New</span></div><div style="display:grid;grid-template-columns:1.3fr 1fr 0.8fr 0.7fr 0.5fr 0.6fr;gap:5px;padding:8px 11px;align-items:center;"><span style="font-size:8px;color:#B4B2A9;">2025-03-15 09:33</span><span style="font-size:8px;color:#B4B2A9;">Unencrypted Data</span><span style="font-size:7px;color:#888780;">AWS KMS</span><span style="font-size:7px;color:#888780;">#87654</span><span class="pbadge" style="background:rgba(29,158,117,0.15);color:#1D9E75;border:0.5px solid rgba(29,158,117,0.3);">Low</span><span class="pbadge" style="background:rgba(29,158,117,0.15);color:#1D9E75;border:0.5px solid rgba(29,158,117,0.3);">Resolved</span></div></div></div>
+          </div>
+          <div id="ps3" class="scr" style="flex:1;flex-direction:column;background:#0d0f18;">
+            <div style="padding:9px 16px;border-bottom:0.5px solid rgba(255,255,255,0.07);display:flex;align-items:center;gap:6px;"><span style="font-size:8px;color:#5F5E5A;cursor:pointer;" onclick="ps(2)">← Security Log</span><span style="font-size:8px;color:#5F5E5A;">/</span><span style="font-size:8px;color:#fff;">Alert #127</span></div>
+            <div style="flex:1;padding:12px 16px;display:flex;flex-direction:column;gap:9px;">
+              <div style="background:rgba(226,75,74,0.07);border:0.5px solid rgba(226,75,74,0.2);border-radius:5px;padding:11px 14px;display:flex;align-items:center;gap:10px;"><div style="width:26px;height:26px;border-radius:50%;background:#E24B4A;display:flex;align-items:center;justify-content:center;flex-shrink:0;"><svg width="12" height="12" viewBox="0 0 16 16" fill="none"><path d="M8 2L2 13h12L8 2z" stroke="#fff" stroke-width="1.4" stroke-linejoin="round"/><path d="M8 6v4" stroke="#fff" stroke-width="1.4" stroke-linecap="round"/></svg></div><div style="flex:1;"><div style="font-size:12px;font-weight:500;color:#fff;margin-bottom:2px;">ALERT NO. 127</div><div style="font-size:8px;color:#5F5E5A;">2025-03-15 14:22:07 UTC · MOVEit · us-west-2</div></div><span class="pbadge" style="background:#E24B4A;color:#fff;padding:3px 8px;">HIGH</span></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:7px;">
+                <div style="background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:5px;padding:11px 13px;"><div style="font-size:9px;font-weight:500;color:#fff;margin-bottom:8px;padding-bottom:6px;border-bottom:0.5px solid rgba(255,255,255,0.06);">Overview</div><div style="display:flex;flex-direction:column;gap:5px;"><div style="display:flex;justify-content:space-between;"><span style="font-size:8px;color:#5F5E5A;">IP Address</span><span style="font-size:8px;color:#fff;font-weight:500;">192.0.2.1</span></div><div style="display:flex;justify-content:space-between;"><span style="font-size:8px;color:#5F5E5A;">Region</span><span style="font-size:8px;color:#fff;font-weight:500;">us-west-2</span></div><div style="display:flex;justify-content:space-between;"><span style="font-size:8px;color:#5F5E5A;">Security</span><span style="font-size:8px;color:#E24B4A;font-weight:500;">HIGH</span></div><div style="display:flex;justify-content:space-between;"><span style="font-size:8px;color:#5F5E5A;">Account ID</span><span style="font-size:8px;color:#fff;font-weight:500;">#102345</span></div><div style="display:flex;justify-content:space-between;"><span style="font-size:8px;color:#5F5E5A;">Resource ID</span><span style="font-size:8px;color:#fff;font-weight:500;">i-R83e884f12b</span></div></div></div>
+                <div style="background:#1a1d27;border:0.5px solid rgba(255,255,255,0.08);border-radius:5px;padding:11px 13px;"><div style="font-size:9px;font-weight:500;color:#fff;margin-bottom:8px;padding-bottom:6px;border-bottom:0.5px solid rgba(255,255,255,0.06);">Threats Detected (3)</div><div style="display:flex;flex-direction:column;gap:5px;"><div style="background:rgba(226,75,74,0.08);border:0.5px solid rgba(226,75,74,0.2);border-radius:3px;padding:6px 8px;"><div style="font-size:8px;font-weight:500;color:#E24B4A;margin-bottom:2px;">Suspicious_Login_Attempt.exe</div><div style="font-size:7px;color:#5F5E5A;">Security: HIGH · us-west-2</div></div><div style="background:rgba(239,159,39,0.08);border:0.5px solid rgba(239,159,39,0.2);border-radius:3px;padding:6px 8px;"><div style="font-size:8px;font-weight:500;color:#EF9F27;margin-bottom:2px;">Unauthorized_API_Access</div><div style="font-size:7px;color:#5F5E5A;">Security: MED · Port: 443</div></div><div style="background:rgba(83,74,183,0.08);border:0.5px solid rgba(83,74,183,0.2);border-radius:3px;padding:6px 8px;"><div style="font-size:8px;font-weight:500;color:#AFA9EC;margin-bottom:2px;">Data_Exfiltration_Attempt</div><div style="font-size:7px;color:#5F5E5A;">Security: MED</div></div></div></div>
+              </div>
+              <div style="display:flex;gap:6px;"><div style="flex:1;background:#E24B4A;border-radius:4px;padding:8px;text-align:center;cursor:pointer;"><span style="font-size:9px;font-weight:500;color:#fff;">Isolate Vendor</span></div><div style="flex:1;background:#1a1d27;border:0.5px solid rgba(255,255,255,0.1);border-radius:4px;padding:8px;text-align:center;cursor:pointer;"><span style="font-size:9px;color:#fff;">Investigate</span></div><div style="flex:1;background:#1a1d27;border:0.5px solid rgba(255,255,255,0.1);border-radius:4px;padding:8px;text-align:center;cursor:pointer;"><span style="font-size:9px;color:#fff;">Mark Resolved</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-copy">Semin Seo — 2026</div>
+    <div class="footer-links"><a href="#">LinkedIn</a><a href="#">GitHub</a></div>
+  </footer>
+</div>
+
+<!-- ===================== PROJECT 02 ===================== -->
+
+<!-- ==================== PROJECT 02: Channel Stuffing ==================== -->
+<div id="p02-page" class="page">
+  <nav>
+    <div class="logo" onclick="showPage('main')">Semin Seo.</div>
+    <ul>
+      <li><a onclick="showPage('main')">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="detail-header">
+    <span class="back-btn" onclick="showPage('main')">← Work</span>
+    <span class="bc-sep">/</span>
+    <span class="bc-cur">Channel Stuffing Detection</span>
+  </div>
+
+  <div class="detail-hero">
+    <div class="detail-num">02 · 전사적 가전 유통 데이터 · MIS 수업 프로젝트</div>
+    <h1 class="detail-title">Channel Stuffing<br>Detection</h1>
+    <p class="detail-sub">대용량 매출 DB를 정제·분석하고 Tableau로 시각화해 기간말 매출 집중 이상 패턴을 탐지했습니다. 데이터에서 발견한 패턴을 비즈니스 리스크로 해석하고, 대손충당금 설정 로직까지 연결되는 감사 절차를 설계했습니다.</p>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">Data Pipeline — End to End</div>
+    <div class="pipeline">
+      <div class="pipe-step"><div class="pipe-num">01</div><div class="pipe-title">DB 구조 파악</div><div class="pipe-desc">Samsung Electronics 가전 8개 테이블. Request → Logistics 2-이벤트 구조에서 QtyRequested vs QtyDelivered 괴리 식별</div><span class="pipe-tool">Oracle SQL</span></div>
+      <div class="pipe-gap">→</div>
+      <div class="pipe-step"><div class="pipe-num">02</div><div class="pipe-title">Data Cleansing</div><div class="pipe-desc">피벗테이블로 기간별 매출 집계, 필터링으로 이상값·결측치 제거, RequestDate 기준 주차별 분포 재구성</div><span class="pipe-tool">Excel Pivot</span></div>
+      <div class="pipe-gap">→</div>
+      <div class="pipe-step"><div class="pipe-num">03</div><div class="pipe-title">Tableau 시각화</div><div class="pipe-desc">Export 후 Tableau로 분기 내 주차별 매출 분포 차트 구성. 기간말 3주 집중 패턴을 색상으로 강조</div><span class="pipe-tool">Tableau</span></div>
+      <div class="pipe-gap">→</div>
+      <div class="pipe-step"><div class="pipe-num">04</div><div class="pipe-title">비즈니스 해석</div><div class="pipe-desc">패턴 → 채널스터핑 리스크 정의 → 대손충당금·재고·반품률 연계 감사 절차 2종 설계</div><span class="pipe-tool">Business Analysis</span></div>
+    </div>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">DB 구조 — Electronics Appliance Division</div>
+    <div style="background:#fff;border:0.5px solid rgba(0,0,0,0.08);border-radius:8px;padding:20px;overflow-x:auto;">
+      <svg viewBox="0 0 780 300" xmlns="http://www.w3.org/2000/svg" style="width:100%;height:auto;font-family:'DM Sans',sans-serif;">
+
+        <rect x="8" y="16" width="148" height="78" rx="5" fill="#f8f8f6" stroke="#ddd" stroke-width="0.8"/>
+        <rect x="8" y="16" width="148" height="22" rx="5" fill="#1a1a1a"/>
+        <rect x="8" y="32" width="148" height="6" fill="#1a1a1a"/>
+        <text x="82" y="30" text-anchor="middle" font-size="9" font-weight="500" fill="#fff">tblProduct</text>
+        <text x="16" y="52" font-size="8" fill="#534AB7" font-weight="500">🔑 Product#</text>
+        <text x="16" y="64" font-size="8" fill="#888">ProductDescription</text>
+        <text x="16" y="76" font-size="8" fill="#888">StandardCost / SalePrice</text>
+        <text x="16" y="88" font-size="8" fill="#888">BQOH / WarrantyPeriod</text>
+
+        <rect x="8" y="116" width="148" height="84" rx="5" fill="#f8f8f6" stroke="#ddd" stroke-width="0.8"/>
+        <rect x="8" y="116" width="148" height="22" rx="5" fill="#1a1a1a"/>
+        <rect x="8" y="132" width="148" height="6" fill="#1a1a1a"/>
+        <text x="82" y="130" text-anchor="middle" font-size="9" font-weight="500" fill="#fff">tblSalesAssociate</text>
+        <text x="16" y="150" font-size="8" fill="#534AB7" font-weight="500">🔑 SalesAssociate#</text>
+        <text x="16" y="162" font-size="8" fill="#888">Name / Address</text>
+        <text x="16" y="174" font-size="8" fill="#888">DateofHire</text>
+        <text x="16" y="186" font-size="8" fill="#aaa" font-style="italic">SSN# (sensitive)</text>
+
+        <rect x="8" y="222" width="148" height="66" rx="5" fill="#f8f8f6" stroke="#ddd" stroke-width="0.8"/>
+        <rect x="8" y="222" width="148" height="22" rx="5" fill="#1a1a1a"/>
+        <rect x="8" y="238" width="148" height="6" fill="#1a1a1a"/>
+        <text x="82" y="236" text-anchor="middle" font-size="9" font-weight="500" fill="#fff">tblLogisticsClerk</text>
+        <text x="16" y="256" font-size="8" fill="#534AB7" font-weight="500">🔑 LogisticsClerk#</text>
+        <text x="16" y="268" font-size="8" fill="#888">Name / Address</text>
+        <text x="16" y="280" font-size="8" fill="#888">DateofHire</text>
+
+        <rect x="196" y="72" width="158" height="72" rx="5" fill="#fffdf5" stroke="#EF9F27" stroke-width="1"/>
+        <rect x="196" y="72" width="158" height="22" rx="5" fill="#854F0B"/>
+        <rect x="196" y="88" width="158" height="6" fill="#854F0B"/>
+        <text x="275" y="86" text-anchor="middle" font-size="9" font-weight="500" fill="#fff">tblClient</text>
+        <text x="204" y="106" font-size="8" fill="#534AB7" font-weight="500">🔑 ClientID</text>
+        <text x="204" y="118" font-size="8" fill="#888">Name / Email / Phone</text>
+        <text x="204" y="130" font-size="8" fill="#888">ClientSegment</text>
+        <text x="204" y="142" font-size="8" fill="#888">PreferredShipping</text>
+
+        <rect x="390" y="16" width="162" height="84" rx="5" fill="#fff8f0" stroke="#EF9F27" stroke-width="1.2"/>
+        <rect x="390" y="16" width="162" height="22" rx="5" fill="#BA7517"/>
+        <rect x="390" y="32" width="162" height="6" fill="#BA7517"/>
+        <text x="471" y="30" text-anchor="middle" font-size="9" font-weight="500" fill="#fff">tblRequest</text>
+        <text x="398" y="50" font-size="8" fill="#534AB7" font-weight="500">🔑 Request#</text>
+        <text x="398" y="62" font-size="8" fill="#888">🔗 SalesAssociate#</text>
+        <text x="398" y="74" font-size="8" fill="#888">🔗 ClientID</text>
+        <text x="398" y="88" font-size="8" fill="#E24B4A" font-weight="500">RequestDate ← 핵심 분석 필드</text>
+
+        <rect x="390" y="124" width="162" height="56" rx="5" fill="#fff5f5" stroke="#E24B4A" stroke-width="1.2"/>
+        <rect x="390" y="124" width="162" height="22" rx="5" fill="#A32D2D"/>
+        <rect x="390" y="140" width="162" height="6" fill="#A32D2D"/>
+        <text x="471" y="138" text-anchor="middle" font-size="9" font-weight="500" fill="#fff">tblRequest/Product</text>
+        <text x="398" y="158" font-size="8" fill="#534AB7" font-weight="500">🔑🔗 Request# + Product#</text>
+        <text x="398" y="170" font-size="8" fill="#E24B4A" font-weight="500">QtyRequested ← 비교 대상</text>
+
+        <rect x="592" y="16" width="162" height="100" rx="5" fill="#f0fff8" stroke="#1D9E75" stroke-width="1.2"/>
+        <rect x="592" y="16" width="162" height="22" rx="5" fill="#0F6E56"/>
+        <rect x="592" y="32" width="162" height="6" fill="#0F6E56"/>
+        <text x="673" y="30" text-anchor="middle" font-size="9" font-weight="500" fill="#fff">tblLogistics</text>
+        <text x="600" y="50" font-size="8" fill="#534AB7" font-weight="500">🔑 Logistics#</text>
+        <text x="600" y="62" font-size="8" fill="#888">🔗 Request#</text>
+        <text x="600" y="74" font-size="8" fill="#888">🔗 ClientID</text>
+        <text x="600" y="86" font-size="8" fill="#888">🔗 LogisticsClerk#</text>
+        <text x="600" y="98" font-size="8" fill="#888">LogisticsDate / Fee</text>
+        <text x="600" y="110" font-size="8" fill="#888">LogisticsFee</text>
+
+        <rect x="592" y="140" width="162" height="56" rx="5" fill="#f0fff8" stroke="#1D9E75" stroke-width="1.2"/>
+        <rect x="592" y="140" width="162" height="22" rx="5" fill="#0F6E56"/>
+        <rect x="592" y="156" width="162" height="6" fill="#0F6E56"/>
+        <text x="673" y="154" text-anchor="middle" font-size="9" font-weight="500" fill="#fff">tblLogistics/Product</text>
+        <text x="600" y="174" font-size="8" fill="#534AB7" font-weight="500">🔑🔗 Logistics# + Product#</text>
+        <text x="600" y="186" font-size="8" fill="#1D9E75" font-weight="500">QtyDelivered ← 비교 대상</text>
+
+        <line x1="156" y1="55" x2="390" y2="55" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <line x1="156" y1="158" x2="390" y2="130" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <line x1="354" y1="108" x2="390" y2="108" stroke="#ccc" stroke-width="0.8" stroke-dasharray="3,2"/>
+        <line x1="552" y1="58" x2="592" y2="58" stroke="#888" stroke-width="1"/>
+        <line x1="552" y1="152" x2="592" y2="162" stroke="#888" stroke-width="1"/>
+
+        <rect x="196" y="222" width="560" height="26" rx="5" fill="#fef2f2" stroke="rgba(220,38,38,0.2)" stroke-width="0.8"/>
+        <text x="476" y="239" text-anchor="middle" font-size="9" fill="#dc2626" font-weight="500">채널스터핑 탐지 핵심: QtyRequested ↑ vs QtyDelivered ↓ 괴리 + RequestDate 기간말 집중</text>
+
+        <text x="471" y="270" text-anchor="middle" font-size="8" fill="#aaa">Event 1: Request (영업 주문)</text>
+        <text x="673" y="220" text-anchor="middle" font-size="8" fill="#aaa">Event 2: Logistics (실제 배송)</text>
+      </svg>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px;">
+      <div style="background:#fff;border:0.5px solid rgba(0,0,0,0.08);border-radius:8px;padding:14px 16px;">
+        <div style="font-size:10px;font-weight:500;color:#aaa;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">Master Tables (4개)</div>
+        <div style="font-size:12px;color:#666;line-height:1.8;">tblProduct · tblSalesAssociate · tblClient · tblLogisticsClerk<br>기준 데이터 — 상품, 영업사원, 고객, 물류 담당자 정보</div>
+      </div>
+      <div style="background:#fff;border:0.5px solid rgba(0,0,0,0.08);border-radius:8px;padding:14px 16px;">
+        <div style="font-size:10px;font-weight:500;color:#aaa;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:8px;">Event Tables (4개) — 분석 핵심</div>
+        <div style="font-size:12px;color:#666;line-height:1.8;"><strong style="color:#BA7517;font-weight:500;">tblRequest / tblRequest/Product</strong> — 영업 주문 (RequestDate, QtyRequested)<br><strong style="color:#0F6E56;font-weight:500;">tblLogistics / tblLogistics/Product</strong> — 실제 배송 (QtyDelivered)</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">POINT 3가지</div>
+    <div class="kia-grid">
+      <div class="kia-card"><div class="kia-icon">Point 01</div><div class="kia-point">비즈니스 요건 → IT 데이터 흐름 해석</div><div class="kia-desc">원시 DB 구조에서 어떤 데이터를 어떻게 뽑아야 채널스터핑이 보이는지를 직접 설계했습니다. 비즈니스 맥락 없이는 SQL 쿼리도, 피벗도 의미가 없습니다.</div><div class="kia-jd">JD — "복잡한 비즈니스 요구사항을 IT 프로세스 관점에서 해석"</div></div>
+      <div class="kia-card"><div class="kia-icon">Point 02</div><div class="kia-point">데이터 흐름 기반 이슈 원인 파악</div><div class="kia-desc">QtyRequested ↑ vs QtyDelivered ↓ 괴리, RequestDate 기간말 집중 — 두 데이터 흐름을 교차 분석해 비즈니스 원인을 역추적했습니다.</div><div class="kia-jd">JD — "데이터 흐름에 근거하여 이슈의 원인을 파악"</div></div>
+      <div class="kia-card"><div class="kia-icon">Point 03</div><div class="kia-point">분석 → 실행 가능한 프로세스 설계</div><div class="kia-desc">인사이트에서 멈추지 않고 대손충당금 추이 모니터링 + 반품률·재고 연계 감사 절차 2종을 설계했습니다. 분석의 끝은 리포트가 아니라 다음 액션입니다.</div><div class="kia-jd">JD — "업무 프로세스 현황 조사 → Pain Point 분석 → 개선방안 도출"</div></div>
+    </div>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">Tableau 시각화 — 분기 내 주차별 매출 분포</div>
+    <div style="display:grid;grid-template-columns:1.4fr 1fr;gap:24px;align-items:start;">
+      <div class="chart-wrap">
+        <div class="chart-title">Sales Distribution by Week — Q4</div>
+        <div class="chart-sub"> Electronics Appliance Division · RequestDate 기준</div>
+        <div class="bar-chart" id="bars02"></div>
+        <div class="chart-legend"><div class="leg"><div class="leg-dot" style="background:#C0DD97;"></div>정상 구간</div><div class="leg"><div class="leg-dot" style="background:#E24B4A;"></div>이상 집중 구간 (기간말 3주)</div></div>
+        <div class="anomaly-box"><div class="anomaly-label">Anomaly Detected</div><div class="anomaly-text">W10–W12 (기간말 3주)에 전체 매출의 <strong>59%</strong>가 집중. 정상 분기라면 주당 7–9% 수준이어야 하나, 기간말에 18–22%로 급등 → 채널스터핑 징후.</div></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:14px;">
+        <div class="clean-card">
+          <div style="font-size:10px;color:#aaa;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">Data Cleansing 과정</div>
+          <div class="clean-step"><div class="step-num">1</div><div><div style="font-size:12px;font-weight:500;color:#1a1a1a;margin-bottom:2px;">피벗테이블 집계</div><div style="font-size:11px;color:#888;">RequestDate × Product별 QtyRequested 집계. 주차(Week) 컬럼 파생 변수 생성.</div></div></div>
+          <div class="clean-step"><div class="step-num">2</div><div><div style="font-size:12px;font-weight:500;color:#1a1a1a;margin-bottom:2px;">이상값 필터링</div><div style="font-size:11px;color:#888;">QtyRequested = 0 또는 NULL 제거. Request-Logistics 미매칭 레코드 분리.</div></div></div>
+          <div class="clean-step"><div class="step-num">3</div><div><div style="font-size:12px;font-weight:500;color:#1a1a1a;margin-bottom:2px;">Tableau Export</div><div style="font-size:11px;color:#888;">정제된 CSV를 Tableau에 연결, 주차별 매출 비율 계산 필드 추가.</div></div></div>
+        </div>
+        <div class="clean-card">
+          <div style="font-size:10px;color:#aaa;letter-spacing:0.08em;text-transform:uppercase;margin-bottom:12px;">감사 절차 설계</div>
+          <div class="audit-item"><div class="audit-title">대손충당금 추이 모니터링</div><div class="audit-desc">기간말 매출 급증 이후 대손충당금이 함께 늘어나는지 분기별 추적</div></div>
+          <div class="audit-item red"><div class="audit-title">반품률 · 재고 수준 연계</div><div class="audit-desc">QtyRequested 급증 구간 이후 반품 데이터와 BQOH 재고 변동 교차 분석</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">Project Story</div>
+    <div class="star-wrap">
+      <div class="star-col">
+        <div class="star-item">
+          <div><div class="star-letter">S</div><div class="star-lsub">Situation</div></div>
+          <div>
+            <div class="star-headline">영업 실적 압박이 매출 데이터를 왜곡하고 있었다</div>
+            <div class="star-body">영업팀의 과도한 재고 밀어내기(채널스터핑)가 매출 인식 조작으로 이어질 수 있다는 문제를 Samsung 가전 매출 DB에서 직접 확인하게 됐습니다. 기간말에 대규모 주문이 집중되는 패턴이 반복되고 있었습니다.</div>
+          </div>
+        </div>
+        <div class="star-item">
+          <div><div class="star-letter">T</div><div class="star-lsub">Task</div></div>
+          <div>
+            <div class="star-headline">데이터로 징후를 포착하고, 프로세스로 설계하라</div>
+            <div class="star-body">대용량 매출 DB를 정제·시각화해 채널스터핑 징후를 데이터로 포착하고, 이를 감지할 수 있는 감사 절차를 직접 설계하는 것이 목표였습니다.</div>
+          </div>
+        </div>
+        <div class="star-item">
+          <div><div class="star-letter">A</div><div class="star-lsub">Action</div></div>
+          <div>
+            <div class="star-headline">DB 정제 → Tableau 시각화 → 감사 절차 설계</div>
+            <div class="star-body" style="margin-bottom:16px;">Excel 피벗테이블로 주차별 매출 분포를 정제하고, Tableau로 Export해 기간말 집중 패턴을 시각화했습니다. 차트에서 발견한 이상 패턴을 회계 지식과 연결해 감사 절차로 구체화했습니다.</div>
+            <div class="tool-tags">
+              <div class="tool-tag"><div class="tool-dot" style="background:#1D9E75;"></div>Oracle SQL · 데이터 추출</div>
+              <div class="tool-tag"><div class="tool-dot" style="background:#EF9F27;"></div>Excel 피벗 · 데이터 정제</div>
+              <div class="tool-tag"><div class="tool-dot" style="background:#534AB7;"></div>Tableau · 시각화</div>
+            </div>
+          </div>
+        </div>
+        <div class="star-item">
+          <div><div class="star-letter">R</div><div class="star-lsub">Result</div></div>
+          <div>
+            <div class="star-headline">패턴 발견 → 리스크 정의 → 프로세스 완성</div>
+            <div class="star-body" style="margin-bottom:16px;">기간말 3주에 전체 매출 59%가 집중되는 이상 패턴을 탐지했습니다. 이를 대손충당금·재고·반품률과 연계하는 감사 절차 2종으로 설계해 분석을 실행 가능한 프로세스로 완성했습니다.</div>
+            <div class="metric-row" style="grid-template-columns:1fr 1fr;">
+              <div class="metric-card"><div class="metric-num" style="color:#E24B4A;">59%</div><div class="metric-desc">기간말 3주 매출 집중율<br><span class="metric-sub">정상: 주당 7–9%</span></div></div>
+              <div class="metric-card"><div class="metric-num" style="color:#1D9E75;">2종</div><div class="metric-desc">설계 감사 절차<br><span class="metric-sub">대손충당금 · 재고모니터링</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="info-card">
+          <div class="info-card-label">Project Info</div>
+          <div class="sinfo-rows">
+            <div class="sinfo-row"><div class="sinfo-label">Domain</div><div class="sinfo-val">Samsung Electronics<br>Appliance Division</div></div>
+            <div class="sinfo-row"><div class="sinfo-label">DB</div><div class="sinfo-val">8 Tables<br>Request → Logistics</div></div>
+            <div class="sinfo-row"><div class="sinfo-label">Tools</div><div class="sinfo-val">Oracle SQL · Excel<br>Tableau</div></div>
+            <div class="sinfo-row"><div class="sinfo-label">Type</div><div class="sinfo-val">개인 프로젝트</div></div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-label">Tags</div>
+          <div class="tag-wrap">
+            <span class="tag">Data Cleansing</span><span class="tag">Tableau</span><span class="tag">Pivot Table</span><span class="tag">Audit Design</span><span class="tag">Accounting</span><span class="tag">Oracle SQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dsection" style="border-bottom:none;">
+    <div class="sec-label">What I Learned</div>
+    <div class="insight-list">
+      <div class="insight-item">[ 피벗 설계가 곧 분석 가설이다 ]<br>
+데이터를 "분기별"로 볼지 "주차별"로 볼지 결정하는 순간, 탐지하려는 패턴의 해상도가 달라집니다. W10~W12의 이상치는 분기 단위 집계에서는 희석되어 보이지 않았고, RequestDate 기준 주차별로 재구성했을 때 비로소 드러났습니다. 어떻게 집계할지 결정하는 것 자체가 이미 분석 방향을 결정하는 일이라는 것을 직접 경험했습니다.</div>
+      <div class="insight-item">[ 패턴은 도메인 지식이 있어야 리스크로 읽힌다 ]<br>
+기간말 3주에 매출이 50% 이상 몰린 패턴은 숫자만 보면 "성과 좋은 분기"입니다. 채널 스터핑 개념과 대손충당금 설정 로직을 알고 있었기 때문에 이 패턴이 실적 조작 가능성을 시사하는 감사 신호라고 해석할 수 있었습니다. 분석가는 데이터를 읽는 사람이 아니라 비즈니스 맥락을 먼저 이해한 사람이어야 한다는 것을 배웠습니다.</div>
+      <div class="insight-item">[ Tableau는 결론을 전달하는 도구가 아니라 질문을 유발하는 도구다 ]<br>
+기간말 3주를 빨간색으로 강조한 막대그래프 하나가 발표에서 가장 많은 질문을 이끌어냈습니다. "이 구간에 왜 이렇게 몰렸나요?"라는 질문이 나왔을 때 비로소 채널 스터핑 리스크 설명으로 이어질 수 있었습니다. 어떤 차트를 쓸지보다 무엇을 강조해서 어떤 질문을 유도할지를 먼저 설계해야 한다는 것을 배웠습니다.</div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-copy">Semin Seo — 2025</div>
+    <div class="footer-links"><a href="#">LinkedIn</a><a href="#">GitHub</a></div>
+  </footer>
+</div>
+<!-- ===================== PROJECT 03 ===================== -->
+
+<!-- ==================== PROJECT 03: Ac.com Order ==================== -->
+<div id="p03-page" class="page">
+  <nav>
+    <div class="logo" onclick="showPage('main')">Semin Seo.</div>
+    <ul>
+      <li><a onclick="showPage('main')">Work</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="detail-header">
+    <span class="back-btn" onclick="showPage('main')">← Work</span>
+    <span class="bc-sep">/</span>
+    <span class="bc-cur">Ac.com 숙박 예약 웹사이트</span>
+  </div>
+
+  <div class="detail-hero">
+    <div class="detail-num">03 · 4인 팀 프로젝트 · 클라우드 네이티브 풀스택 & DevOps 개발자 아카데미
+</div>
+    <div style="display:inline-flex;align-items:center;gap:6px;background:#FAEEDA;border:0.5px solid #EF9F27;border-radius:20px;padding:4px 12px;font-size:11px;color:#854F0B;font-weight:500;margin-bottom:16px;">
+      <div style="width:6px;height:6px;border-radius:50%;background:#EF9F27;"></div>Work in Progress
+    </div>
+    <h1 class="detail-title">비즈니스 로직을<br>시스템으로 정의하다</h1>
+    <p class="detail-sub">숙박 예약 플랫폼 Ac.com에서 주문(Order) 도메인 전체를 담당했습니다. "날짜별 만실을 어떻게 처리할까", "취소된 예약은 어떤 상태로 남겨야 할까" — 비즈니스 질문을 직접 정의하고, 그 답을 시스템 구조로 설계했습니다.</p>
+    <a class="github-link" href="https://github.com/rynne4976-art/Accommodation" target="_blank">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+      GitHub — rynne4976-art/Accommodation
+    </a>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">POINT 3가지</div>
+    <div class="kia-grid">
+      <div class="kia-card">
+        <div class="kia-icon">Point 01</div>
+        <div class="kia-point">요구사항을 데이터 구조로 번역하는 능력</div>
+        <div class="kia-desc">"날짜별 만실을 달력에서 보여줘"라는 비즈니스 요건이 OrderStayDate 테이블 설계로 이어지는 과정을 직접 경험했습니다. 개발팀에게 요구사항을 구조적으로 전달할 수 있습니다.</div>
+        <div class="kia-jd">JD — "복잡한 비즈니스 요구사항을 IT 프로세스 관점에서 해석"</div>
+      </div>
+      <div class="kia-card">
+        <div class="kia-icon">Point 02</div>
+        <div class="kia-point">엣지 케이스를 사전에 정의하는 능력</div>
+        <div class="kia-desc">"오늘 체크인인데 시간이 지났으면?", "취소된 예약도 만실 카운트에 포함되나?" — 7가지 예외 상황을 구현 전에 정의했습니다. 이게 IT PM이 개발팀에게 줄 수 있는 가장 큰 가치입니다.</div>
+        <div class="kia-jd">JD — "테스트 시나리오 작성 및 사용자 테스트(UT) 지원"</div>
+      </div>
+      <div class="kia-card">
+        <div class="kia-icon">Point 03</div>
+        <div class="kia-point">도메인 간 의존성과 데이터 흐름 이해</div>
+        <div class="kia-desc">Order가 Accom·Member·Review와 어떻게 연결되는지 알기 때문에, 팀 간 인터페이스 정의와 의존성 이슈를 먼저 발견하고 조율할 수 있었습니다.</div>
+        <div class="kia-jd">JD — "데이터 흐름에 근거하여 이슈의 원인을 파악"</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">비즈니스 요건 → 시스템 설계 — 번역의 과정</div>
+    <div style="display:flex;flex-direction:column;gap:0;">
+
+      <div style="display:grid;grid-template-columns:1fr 40px 1fr;gap:0;align-items:center;padding:22px 0;border-top:0.5px solid rgba(0,0,0,0.08);">
+        <div style="padding-right:24px;">
+          <div style="font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#aaa;margin-bottom:5px;">비즈니스 질문</div>
+          <div style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:4px;line-height:1.4;">"날짜가 꽉 찼는지 달력에서 바로 보여줘"</div>
+          <div style="font-size:12px;color:#666;line-height:1.7;">예약 폼 진입 시 이미 만실인 날짜를 달력에서 회색으로 막아줘야 한다. 어떻게 판단할까?</div>
+        </div>
+        <div style="text-align:center;font-size:16px;color:#ccc;">→</div>
+        <div style="padding-left:24px;border-left:0.5px solid rgba(0,0,0,0.08);">
+          <div style="font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#aaa;margin-bottom:5px;">시스템 설계 결정</div>
+          <div style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:4px;line-height:1.4;">날짜 범위가 아닌 날짜별 레코드 저장</div>
+          <div style="font-size:12px;color:#666;line-height:1.7;">체크인~체크아웃을 범위로만 저장하면 날짜별 중복 판단이 복잡해진다. 하루씩 OrderStayDate 레코드로 저장하면 GROUP BY 집계로 만실 여부를 단순하게 조회할 수 있다.</div>
+          <span style="display:inline-block;font-size:9px;padding:2px 8px;border-radius:3px;margin-top:6px;font-weight:500;background:#EEEDFE;color:#3C3489;">→ OrderStayDate 테이블 설계</span>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 40px 1fr;gap:0;align-items:center;padding:22px 0;border-top:0.5px solid rgba(0,0,0,0.08);">
+        <div style="padding-right:24px;">
+          <div style="font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#aaa;margin-bottom:5px;">비즈니스 질문</div>
+          <div style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:4px;line-height:1.4;">"예약을 취소하면 그 날짜는 다시 열려야 해"</div>
+          <div style="font-size:12px;color:#666;line-height:1.7;">취소된 예약의 날짜가 만실 카운트에 포함되면 안 된다. 하지만 예약 기록 자체는 남아야 한다.</div>
+        </div>
+        <div style="text-align:center;font-size:16px;color:#ccc;">→</div>
+        <div style="padding-left:24px;border-left:0.5px solid rgba(0,0,0,0.08);">
+          <div style="font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#aaa;margin-bottom:5px;">시스템 설계 결정</div>
+          <div style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:4px;line-height:1.4;">삭제가 아닌 상태 변경 + 쿼리 조건 제외</div>
+          <div style="font-size:12px;color:#666;line-height:1.7;">OrderStayDate를 삭제하지 않고 Order의 상태를 CANCEL로 변경한다. 만실 조회 쿼리에서 CANCEL 상태를 제외하는 조건을 추가해 데이터 일관성과 이력 보존을 동시에 달성한다.</div>
+          <span style="display:inline-block;font-size:9px;padding:2px 8px;border-radius:3px;margin-top:6px;font-weight:500;background:#E1F5EE;color:#085041;">→ orderStatus &lt;&gt; CANCEL 조건</span>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 40px 1fr;gap:0;align-items:center;padding:22px 0;border-top:0.5px solid rgba(0,0,0,0.08);">
+        <div style="padding-right:24px;">
+          <div style="font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#aaa;margin-bottom:5px;">비즈니스 질문</div>
+          <div style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:4px;line-height:1.4;">"날짜를 바꾸면 기존 예약 점유는 어떻게 되나?"</div>
+          <div style="font-size:12px;color:#666;line-height:1.7;">체크인·체크아웃을 수정하면 기존 날짜 점유 레코드가 남은 채 새 날짜 레코드가 추가되면 안 된다.</div>
+        </div>
+        <div style="text-align:center;font-size:16px;color:#ccc;">→</div>
+        <div style="padding-left:24px;border-left:0.5px solid rgba(0,0,0,0.08);">
+          <div style="font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#aaa;margin-bottom:5px;">시스템 설계 결정</div>
+          <div style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:4px;line-height:1.4;">수정 시 StayDate 전체 초기화 후 재생성</div>
+          <div style="font-size:12px;color:#666;line-height:1.7;">수정 요청이 들어오면 기존 OrderStayDate를 먼저 모두 제거하고(clearStayDates), 새 날짜 범위로 재생성(syncStayDates)한다. 검증도 수정 대상을 제외한 상태로 재실행한다.</div>
+          <span style="display:inline-block;font-size:9px;padding:2px 8px;border-radius:3px;margin-top:6px;font-weight:500;background:#FAEEDA;color:#633806;">→ clearStayDates() + excludeOrderItemId</span>
+        </div>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 40px 1fr;gap:0;align-items:center;padding:22px 0;border-top:0.5px solid rgba(0,0,0,0.08);border-bottom:0.5px solid rgba(0,0,0,0.08);">
+        <div style="padding-right:24px;">
+          <div style="font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#aaa;margin-bottom:5px;">비즈니스 질문</div>
+          <div style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:4px;line-height:1.4;">"관리자가 주문을 검색하고 상태를 바꿀 수 있어야 해"</div>
+          <div style="font-size:12px;color:#666;line-height:1.7;">주문 ID·이메일·회원명으로 검색하고 ORDER/CANCEL 상태를 변경할 수 있어야 한다. 단 취소된 예약을 다시 ORDER로 되돌리는 건 불가능해야 한다.</div>
+        </div>
+        <div style="text-align:center;font-size:16px;color:#ccc;">→</div>
+        <div style="padding-left:24px;border-left:0.5px solid rgba(0,0,0,0.08);">
+          <div style="font-size:9px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#aaa;margin-bottom:5px;">시스템 설계 결정</div>
+          <div style="font-size:13px;font-weight:500;color:#1a1a1a;margin-bottom:4px;line-height:1.4;">동적 검색 쿼리 + 상태 전이 규칙 코드화</div>
+          <div style="font-size:12px;color:#666;line-height:1.7;">QueryDSL로 검색 조건을 동적으로 조합했다. 관리자 상태 변경 시 "CANCEL → ORDER 전이 불가" 규칙을 서비스 레이어에서 명시적으로 차단해 운영 정책을 코드로 강제했다.</div>
+          <span style="display:inline-block;font-size:9px;padding:2px 8px;border-radius:3px;margin-top:6px;font-weight:500;background:#F1EFE8;color:#2C2C2A;">→ updateOrderStatusByAdmin() 정책 로직</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">사전에 정의한 엣지 케이스 7가지 — 테스트 시나리오의 원형</div>
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-bottom:14px;">
+      <div class="kia-card">
+        <div style="font-size:12px;font-weight:500;color:#1a1a1a;margin-bottom:6px;line-height:1.4;">예약 불가 상태의 숙소에 예약이 들어오면?</div>
+        <div style="font-size:11px;color:#888;line-height:1.65;">reserveStatCd가 "Y"가 아닌 숙소는 예약 생성 즉시 차단. 운영 중단 숙소에 예약이 쌓이는 상황을 방지한다.</div>
+        <div style="font-size:10px;color:#aaa;margin-top:8px;padding-top:8px;border-top:0.5px solid rgba(0,0,0,0.06);"><strong style="color:#1a1a1a;font-weight:500;">결정</strong> — 가장 첫 번째 검증으로 배치, 이후 로직 실행 안 함</div>
+      </div>
+      <div class="kia-card">
+        <div style="font-size:12px;font-weight:500;color:#1a1a1a;margin-bottom:6px;line-height:1.4;">체크아웃이 체크인보다 앞선 날짜로 들어오면?</div>
+        <div style="font-size:11px;color:#888;line-height:1.65;">프론트 UI에서 막더라도 API 직접 호출 가능성이 있다. 서버에서도 반드시 날짜 순서를 검증한다.</div>
+        <div style="font-size:10px;color:#aaa;margin-top:8px;padding-top:8px;border-top:0.5px solid rgba(0,0,0,0.06);"><strong style="color:#1a1a1a;font-weight:500;">결정</strong> — 서버 사이드 검증 필수, 프론트만 믿지 않음</div>
+      </div>
+      <div class="kia-card">
+        <div style="font-size:12px;font-weight:500;color:#1a1a1a;margin-bottom:6px;line-height:1.4;">최대 수용 인원보다 많은 인원으로 예약하면?</div>
+        <div style="font-size:11px;color:#888;line-height:1.65;">숙소마다 maxGuestCount가 다르다. 초과 시 몇 명까지 가능한지 메시지에 포함해 UX를 개선한다.</div>
+        <div style="font-size:10px;color:#aaa;margin-top:8px;padding-top:8px;border-top:0.5px solid rgba(0,0,0,0.06);"><strong style="color:#1a1a1a;font-weight:500;">결정</strong> — 에러 메시지에 최대 인원 수 동적으로 포함</div>
+      </div>
+      <div class="kia-card">
+        <div style="font-size:12px;font-weight:500;color:#1a1a1a;margin-bottom:6px;line-height:1.4;">오늘 날짜인데 이미 체크인 시간이 지났으면?</div>
+        <div style="font-size:11px;color:#888;line-height:1.65;">날짜가 오늘이더라도 체크인 시간이 지나면 예약 불가. 숙소마다 체크인 시간이 다르므로 운영 정책에서 참조한다.</div>
+        <div style="font-size:10px;color:#aaa;margin-top:8px;padding-top:8px;border-top:0.5px solid rgba(0,0,0,0.06);"><strong style="color:#1a1a1a;font-weight:500;">결정</strong> — LocalTime.now() vs policy.getCheckInTime() 비교</div>
+      </div>
+      <div class="kia-card">
+        <div style="font-size:12px;font-weight:500;color:#1a1a1a;margin-bottom:6px;line-height:1.4;">운영 기간 밖 날짜를 선택하면?</div>
+        <div style="font-size:11px;color:#888;line-height:1.65;">숙소마다 운영 시작일·종료일이 다르다. 체크인이 운영 시작일 이전이거나 마지막 숙박일이 운영 종료일 이후면 차단한다.</div>
+        <div style="font-size:10px;color:#aaa;margin-top:8px;padding-top:8px;border-top:0.5px solid rgba(0,0,0,0.06);"><strong style="color:#1a1a1a;font-weight:500;">결정</strong> — operationStartDate / operationEndDate 정책 기반 검증</div>
+      </div>
+      <div class="kia-card">
+        <div style="font-size:12px;font-weight:500;color:#1a1a1a;margin-bottom:6px;line-height:1.4;">운영하지 않는 요일이 선택 구간에 포함되면?</div>
+        <div style="font-size:11px;color:#888;line-height:1.65;">숙소는 특정 요일만 운영할 수 있다. 선택한 날짜 범위에 비운영일이 끼어 있으면 전체 예약이 불가하다.</div>
+        <div style="font-size:10px;color:#aaa;margin-top:8px;padding-top:8px;border-top:0.5px solid rgba(0,0,0,0.06);"><strong style="color:#1a1a1a;font-weight:500;">결정</strong> — operationDayList Set으로 날짜별 포함 여부 확인</div>
+      </div>
+    </div>
+    <div class="kia-card" style="border-radius:8px;">
+      <div style="font-size:12px;font-weight:500;color:#1a1a1a;margin-bottom:6px;line-height:1.4;">선택한 날짜 중 하루라도 만실이면?</div>
+      <div style="font-size:11px;color:#888;line-height:1.65;">3박 예약에서 2일은 가능하고 1일만 만실이어도 전체 예약 불가. 어느 날짜가 문제인지 메시지에 포함한다.</div>
+      <div style="font-size:10px;color:#aaa;margin-top:8px;padding-top:8px;border-top:0.5px solid rgba(0,0,0,0.06);"><strong style="color:#1a1a1a;font-weight:500;">결정</strong> — 날짜별 countReservedByDate() 루프, 문제 날짜 메시지 반환</div>
+    </div>
+    <div style="margin-top:14px;padding:14px 18px;background:#f5f4f0;border-radius:6px;border:0.5px solid rgba(0,0,0,0.08);">
+      <div style="font-size:12px;color:#555;line-height:1.75;">이 7가지는 단순한 개발 예외 처리가 아닌 <strong style="font-weight:500;color:#1a1a1a;">기획 단계에서 정의되는 비즈니스 규칙</strong>입니다. 개발 경험을 바탕으로 이런 엣지 케이스를 미리 발견하고, IT 기획자로서 기획서에 명시하거나 QA 테스트 시나리오로 만들어볼 수 있었습니다.</div>
+    </div>
+  </div>
+
+  <div class="dsection">
+    <div class="sec-label">Project Story</div>
+    <div class="star-wrap">
+      <div class="star-col">
+        <div class="star-item">
+          <div><div class="star-letter">S</div><div class="star-lsub">Situation</div></div>
+          <div>
+            <div class="star-headline">숙박 예약의 복잡한 로직을 정의하다</div>
+            <div class="star-body">4인 팀 프로젝트에서 숙박 예약 웹사이트를 개발했습니다. 숙박 도메인은 일반 커머스와 달리 날짜 범위, 운영 정책, 만실, 취소 이력 보존 등 복잡한 비즈니스 규칙이 얽혀 있었습니다. 이 규칙들을 명확하게 정의하지 않으면 개발이 시작될 수 없었습니다.</div>
+          </div>
+        </div>
+        <div class="star-item">
+          <div><div class="star-letter">T</div><div class="star-lsub">Task</div></div>
+          <div>
+            <div class="star-headline">주문 도메인의 비즈니스 규칙 정의 + 전체 구현</div>
+            <div class="star-body">예약 생성·취소·수정·만실 처리·내역 조회까지 Order 도메인 전체를 담당했습니다. 구현 전에 "어떤 상황에서 예약이 불가능한가", "데이터를 어떻게 구조화해야 이후 조회가 쉬운가"를 먼저 정의하는 것이 핵심 과제였습니다.</div>
+          </div>
+        </div>
+        <div class="star-item">
+          <div><div class="star-letter">A</div><div class="star-lsub">Action</div></div>
+          <div>
+            <div class="star-headline">비즈니스 질문 → 설계 결정 → 구현 순서로 접근</div>
+            <div class="star-body" style="margin-bottom:16px;">코드를 먼저 쓰지 않고, "이 요구사항을 어떤 데이터 구조로 표현해야 하는가"를 먼저 정리했습니다. 날짜별 만실 처리를 위한 테이블 설계, 취소 시 이력 보존 정책, 7가지 예외 케이스 사전 정의, 수정 시 기존 점유 데이터 초기화 로직 — 각 결정에는 비즈니스 이유가 있었습니다.</div>
+            <div class="tool-tags">
+              <div class="tool-tag"><div class="tool-dot" style="background:#1a1a1a;"></div>Java · Spring MVC</div>
+              <div class="tool-tag"><div class="tool-dot" style="background:#534AB7;"></div>JPA · 엔티티 설계</div>
+              <div class="tool-tag"><div class="tool-dot" style="background:#1D9E75;"></div>QueryDSL · 동적 검색</div>
+              <div class="tool-tag"><div class="tool-dot" style="background:#EF9F27;"></div>Thymeleaf · AJAX</div>
+            </div>
+          </div>
+        </div>
+        <div class="star-item">
+          <div><div class="star-letter">R</div><div class="star-lsub">Result</div></div>
+          <div>
+            <div class="star-headline">규칙이 코드가 되고, 코드가 명세가 됐다</div>
+            <div class="star-body" style="margin-bottom:16px;">Order 도메인 전 기능을 완성했고, 팀원들의 숙소·회원·리뷰 도메인과 연동해 전체 서비스가 동작하는 상태입니다. 더 중요한 건 — 처음에 "어떤 케이스를 막아야 하나"를 정리한 문서가 나중에 팀의 QA 체크리스트가 됐습니다. 개발하기 전에 정의하는 사람의 가치를 직접 경험했습니다.</div>
+            <div class="metric-row" style="grid-template-columns:1fr 1fr 1fr;">
+              <div class="metric-card"><div class="metric-num" style="color:#1a1a1a;">7가지</div><div class="metric-desc">사전 정의 엣지 케이스<br><span class="metric-sub">→ QA 체크리스트로 활용</span></div></div>
+              <div class="metric-card"><div class="metric-num" style="color:#534AB7;">4가지</div><div class="metric-desc">비즈니스 → 설계 번역<br><span class="metric-sub">요건마다 이유 있는 결정</span></div></div>
+              <div class="metric-card"><div class="metric-num" style="color:#1D9E75;">전체</div><div class="metric-desc">Order 도메인 담당<br><span class="metric-sub">설계·구현·팀 연동</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div class="info-card">
+          <div class="info-card-label">Project Info</div>
+          <div class="sinfo-rows">
+            <div class="sinfo-row"><div class="sinfo-label">Role</div><div class="sinfo-val">Order 도메인 전체<br>비즈니스 규칙 정의 + 구현</div></div>
+            <div class="sinfo-row"><div class="sinfo-label">Team</div><div class="sinfo-val">4인 팀 프로젝트</div></div>
+            <div class="sinfo-row"><div class="sinfo-label">Course</div><div class="sinfo-val">KH정보교육원<br>클라우드 네이티브 풀스택 & DevOps 개발자</div></div>
+            <div class="sinfo-row"><div class="sinfo-label">Status</div><div class="sinfo-val" style="color:#EF9F27;font-weight:500;">Work in Progress</div></div>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-label">Tech Stack</div>
+          <div class="tag-wrap">
+            <span class="tag" style="background:#1a1a1a;color:#fff;border-color:#1a1a1a;">Java</span>
+            <span class="tag" style="background:#1a1a1a;color:#fff;border-color:#1a1a1a;">Spring MVC</span>
+            <span class="tag">JPA</span><span class="tag">QueryDSL</span>
+            <span class="tag">Oracle SQL</span><span class="tag">Thymeleaf</span>
+            <span class="tag">AWS S3</span>
+          </div>
+        </div>
+        <div class="info-card">
+          <div class="info-card-label">Tags</div>
+          <div class="tag-wrap">
+            <span class="tag">비즈니스 로직 설계</span>
+            <span class="tag">엣지 케이스 정의</span>
+            <span class="tag">요구사항 번역</span>
+            <span class="tag">데이터 구조 설계</span>
+            <span class="tag">4인 팀</span>
+            <span class="tag">Full-Stack</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="dsection" style="border-bottom:none;">
+    <div class="sec-label">What I Learned</div>
+    <div class="insight-list">
+      <div class="insight-item"> [ 요건의 모호함은 엔티티 수로 돌아온다 ]
+"숙소마다 운영일이 다르다" 한 문장이 시스템에서 2개의 엔티티로 쪼개졌습니다. 기획 단계에서 경계 조건을 명시하지 않으면 그 해석 비용을 개발자가 설계로 떠안게 된다는 것을 배웠습니다. </div>
+      <div class="insight-item"> [ 비즈니스 규칙은 어느 레이어에서 보장할지 기획이 결정해야 한다 ]
+"리뷰는 1인 1회"라는 규칙을 앱 코드에서만 막을지, DB 제약까지 걸지는 기술 결정처럼 보이지만 실은 규칙의 중요도를 기획자가 먼저 정의해야 결정됩니다. 규칙의 강도를 문서화하는 것이 기획자의 몫임을 배웠습니다. </div>
+      <div class="insight-item"> [ 상태 전이를 정의하지 않으면 예외 케이스는 개발 중에 발견된다 ]
+주문 취소 후 재취소, 이미 마감된 날짜 예약 시도 등은 개발 중 뒤늦게 발견되기 쉬운 케이스입니다. 상태 머신을 기획 산출물로 먼저 그려두면 엣지 케이스가 테스트 시나리오의 목차가 되고, 개발 일정 리스크도 줄어든다는 것을 배웠습니다. </div>
+      <div class="insight-item"> [ 성능 결정도 기획 요건에서 시작된다 ]
+평균 평점을 실시간 계산할지 저장해둘지는 "평점이 얼마나 자주, 얼마나 빠르게 보여야 하는가"라는 기획 요건이 먼저 있어야 결정됩니다. 비기능 요건(응답속도·정합성 허용 범위)을 기획 단계에서 명시하지 않으면 개발자가 임의로 선택하게 된다는 것을 배웠습니다. </div>
+      <div class="insight-item"> [ 개발을 직접 해보면 기획 문서에서 빠진 것이 보인다 ]
+구현 과정에서 "이 케이스는 기획서에 없었는데?" 하는 순간이 반복됐습니다. 개발 경험은 기획자에게 "어디서 구멍이 생기는지"를 사전에 감지하는 감각을 줍니다. 요건 정의서를 쓸 때 개발자 관점의 질문을 먼저 던질 수 있게 된 것이 가장 큰 수확이었습니다. </div>
+    </div>
+
+  <footer>
+    <div class="footer-copy">Semin Seo — 2026</div>
+    <div class="footer-links"><a href="#">LinkedIn</a><a href="#">GitHub</a></div>
+  </footer>
+</div>
+
+<!-- Scripts -->
+<script src="main.js"></script>
+</body>
+</html>
