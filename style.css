@@ -310,3 +310,38 @@ footer{padding:22px 56px;display:flex;justify-content:space-between;align-items:
 .audit-title{font-size:11px;font-weight:500;color:#1a1a1a;margin-bottom:3px;}
 .audit-desc{font-size:11px;color:#888;}
 .erd-wrap{background:#fff;border:0.5px solid rgba(0,0,0,0.08);border-radius:8px;padding:20px;overflow:auto;}
+
+/* ========== Print Button ========== */
+#btn-print{position:fixed;bottom:28px;right:28px;z-index:9999;background:#1a1a1a;color:#fff;border:none;border-radius:8px;padding:10px 18px;font-size:12px;font-family:'DM Sans',sans-serif;cursor:pointer;display:flex;align-items:center;gap:7px;box-shadow:0 4px 18px rgba(0,0,0,0.2);transition:background 0.18s;letter-spacing:0.01em;}
+#btn-print:hover{background:#333;}
+#btn-print svg{width:14px;height:14px;flex-shrink:0;}
+
+/* ========== @media print ========== */
+@media print {
+  *{-webkit-print-color-adjust:exact !important;print-color-adjust:exact !important;}
+  body{background:#f5f4f0;}
+
+  /* Show all pages */
+  .page{display:block !important;}
+
+  /* Page break before each project */
+  #p01-page,#p02-page,#p03-page{page-break-before:always;break-before:page;}
+
+  /* Hide interactive / navigation elements */
+  nav,.detail-header,#btn-print,#fact-popup,.hero-arrow,.grid-intro,.proj-arrow{display:none !important;}
+
+  /* Reset fade animations */
+  .fade{opacity:1 !important;animation:none !important;transform:none !important;}
+
+  /* Sidebar: no sticky */
+  .sidebar{position:static !important;}
+
+  /* Show all Figma proto screens stacked */
+  .scr{display:flex !important;margin-bottom:12px;}
+
+  /* Photo grid: show front face only */
+  .photo-cell .cell-inner{transform:none !important;}
+
+  /* Avoid breaks inside key blocks */
+  .kia-card,.metric-card,.star-item,.dsection,.info-card,.insight-item,.pipe-step,.kia-grid,.metric-row{break-inside:avoid;page-break-inside:avoid;}
+}

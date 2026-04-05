@@ -107,6 +107,23 @@ document.addEventListener('click', e => {
   if (e.target === popup) closeFact();
 });
 
+/* ---------- Print / PDF Export ---------- */
+function printAll() {
+  const showAll = () => {
+    document.querySelectorAll('.page').forEach(p => { p.style.display = 'block'; });
+    document.querySelectorAll('.scr').forEach(s => { s.style.display = 'flex'; });
+    document.querySelectorAll('.fade').forEach(f => { f.style.opacity = '1'; f.style.animation = 'none'; });
+  };
+  const restoreAll = () => {
+    document.querySelectorAll('.page').forEach(p => { p.style.display = ''; });
+    document.querySelectorAll('.scr').forEach(s => { s.style.display = ''; });
+    document.querySelectorAll('.fade').forEach(f => { f.style.opacity = ''; f.style.animation = ''; });
+  };
+  window.addEventListener('beforeprint', showAll, { once: true });
+  window.addEventListener('afterprint', restoreAll, { once: true });
+  window.print();
+}
+
 /* ---------- Init ---------- */
 document.addEventListener('DOMContentLoaded', () => {
   buildBarChart();
