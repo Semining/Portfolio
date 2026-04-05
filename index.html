@@ -33,7 +33,7 @@
       <div class="section-label fade">Platform Planner · UX-Driven Service Designer</div>
       <h1 class="hero-title fade">Hello,<br>I'm <span>Semin</span><br>Seo.</h1>
       <br><p class="hero-desc">사용자 플로우를 설계하고,<br>데이터로 인사이트를 도출하며,<br>개발 요구사항으로 연결하는 플랫폼 기획자입니다.</p>
-      <span class="hero-arrow">View my work &nbsp;↓</span>
+      <span class="hero-arrow" onclick="document.getElementById('projects-section').scrollIntoView({behavior:'smooth'})">View my work &nbsp;↓</span>
     </div>
     <div class="hero-grid-col">
       <p class="grid-intro fade"> Offline mode: A few things you won't find in my resume. <br><span> Click! ↓</span></p>
@@ -57,7 +57,7 @@
             <div class="cell-back" style="background-image:url('image/BOOK.jpg')"></div>
           </div>
         </div>
-        <div class="photo-cell" data-fact="평소엔 컴퓨터 앞에만 앉아있지만 감성 충만 소녀랍니다^^ 🌸">
+        <div class="photo-cell" data-fact="평소엔 컴퓨터 앞에만 앉아있지만 감성 충만 🌸">
           <div class="cell-inner">
             <div class="cell-front"><span>SEASON</span></div>
             <div class="cell-back" style="background-image:url('image/SEASON.jpg')"></div>
@@ -87,7 +87,7 @@
             <div class="cell-back" style="background-image:url('image/OUTFIT.jpg')"></div>
           </div>
         </div>
-        <div class="photo-cell" data-fact="TMI지만 제 퍼스널컬러는 봄웜입니다. 🌼">
+        <div class="photo-cell" data-fact="TMI: 제 퍼스널컬러는 봄웜입니다. 🌼">
           <div class="cell-inner">
             <div class="cell-front"><span>COLOR</span></div>
             <div class="cell-back" style="background-image:url('image/COLOR.jpg')"></div>
@@ -107,7 +107,7 @@
   </section>
 
   <!-- Project List -->
-  <section class="projects">
+  <section class="projects" id="projects-section">
     <div class="project-row fade" onclick="showPage('p01')">
       <div class="proj-num">01</div>
       <div>
@@ -170,7 +170,7 @@
     <div class="contact-cta">I am thrilled to answer<br>your next project <span>→</span></div>
     <div class="contact-right">
       <span class="contact-email">sjtpals0111@gmail.com</span>
-      <span class="contact-resume">View Resume</span>
+      <a class="contact-resume" href="Semin_Seo_Resume_포폴용.pdf" target="_blank" style="text-decoration:none;">View Resume</a>
     </div>
   </section>
 
@@ -445,7 +445,7 @@ AS-IS 연간 416시간·$88,400이라는 숫자는 단순 비교용이 아니었
 
   <footer>
     <div class="footer-copy">Semin Seo — 2026</div>
-    <div class="footer-links"><a href="#">LinkedIn</a><a href="#">GitHub</a></div>
+    <div class="footer-links"><a href="https://linkedin.com/in/semin-seo" target="_blank">LinkedIn</a><a href="https://github.com/Semining" target="_blank">GitHub</a></div>
   </footer>
 </div>
 
@@ -473,12 +473,13 @@ AS-IS 연간 416시간·$88,400이라는 숫자는 단순 비교용이 아니었
     <h1 class="detail-title">Channel Stuffing<br>Detection</h1>
     <h2 class="detail-subtitle">데이터로 인사이트를<br>도출하다</h2>
     <p class="detail-sub">대용량 매출 DB를 정제·분석하고 Tableau로 시각화해 기간말 매출 집중 이상 패턴을 탐지했습니다. 데이터에서 발견한 패턴을 비즈니스 리스크로 해석하고, 대손충당금 설정의 필요성을 도출했습니다.</p>
+    <p style="font-size:11px;color:#aaa;margin-top:10px;">※ 본 프로젝트에 사용된 데이터는 수업용으로 제공된 가상의 데이터이며, 실제 기업 데이터와 무관합니다.</p>
   </div>
 
   <div class="dsection">
     <div class="sec-label">Data Pipeline — End to End</div>
     <div class="pipeline">
-      <div class="pipe-step"><div class="pipe-num">01</div><div class="pipe-title">DB 구조 파악</div><div class="pipe-desc">Samsung Electronics 가전 8개 테이블. Request → Logistics 2-이벤트 구조에서 QtyRequested vs QtyDelivered 괴리 식별</div><span class="pipe-tool">Oracle SQL</span></div>
+      <div class="pipe-step"><div class="pipe-num">01</div><div class="pipe-title">DB 구조 파악</div><div class="pipe-desc">S사 Electronics 가전 8개 테이블. Request → Logistics 2-이벤트 구조에서 QtyRequested vs QtyDelivered 괴리 식별</div><span class="pipe-tool">Oracle SQL</span></div>
       <div class="pipe-gap">→</div>
       <div class="pipe-step"><div class="pipe-num">02</div><div class="pipe-title">Data Cleansing</div><div class="pipe-desc">피벗테이블로 기간별 매출 집계, 필터링으로 이상값·결측치 제거, RequestDate 기준 주차별 분포 재구성</div><span class="pipe-tool">Excel Pivot</span></div>
       <div class="pipe-gap">→</div>
@@ -630,7 +631,7 @@ AS-IS 연간 416시간·$88,400이라는 숫자는 단순 비교용이 아니었
           <div><div class="star-letter">S</div><div class="star-lsub">Situation</div></div>
           <div>
             <div class="star-headline">영업 실적 압박이 매출 데이터를 왜곡하고 있었다</div>
-            <div class="star-body">영업팀의 과도한 재고 밀어내기(채널스터핑)가 매출 인식 조작으로 이어질 수 있다는 문제를 Samsung 가전 매출 DB에서 직접 확인하게 됐습니다. 기간말에 대규모 주문이 집중되는 패턴이 반복되고 있었습니다.</div>
+            <div class="star-body">영업팀의 과도한 재고 밀어내기(채널스터핑)가 매출 인식 조작으로 이어질 수 있다는 문제를 S사 가전 매출 DB에서 직접 확인하게 됐습니다. 기간말에 대규모 주문이 집중되는 패턴이 반복되고 있었습니다.</div>
           </div>
         </div>
         <div class="star-item">
@@ -664,7 +665,7 @@ AS-IS 연간 416시간·$88,400이라는 숫자는 단순 비교용이 아니었
         <div class="info-card">
           <div class="info-card-label">Project Info</div>
           <div class="sinfo-rows">
-            <div class="sinfo-row"><div class="sinfo-label">Domain</div><div class="sinfo-val">Samsung Electronics<br>Appliance Division</div></div>
+            <div class="sinfo-row"><div class="sinfo-label">Domain</div><div class="sinfo-val"> Electronics<br>Appliance Division</div></div>
             <div class="sinfo-row"><div class="sinfo-label">DB</div><div class="sinfo-val">8 Tables<br>Request → Logistics</div></div>
             <div class="sinfo-row"><div class="sinfo-label">Tools</div><div class="sinfo-val">Oracle SQL · Excel<br>Tableau</div></div>
             <div class="sinfo-row"><div class="sinfo-label">Type</div><div class="sinfo-val">개인 프로젝트</div></div>
@@ -695,7 +696,7 @@ AS-IS 연간 416시간·$88,400이라는 숫자는 단순 비교용이 아니었
 
   <footer>
     <div class="footer-copy">Semin Seo — 2025</div>
-    <div class="footer-links"><a href="#">LinkedIn</a><a href="#">GitHub</a></div>
+    <div class="footer-links"><a href="https://linkedin.com/in/semin-seo" target="_blank">LinkedIn</a><a href="https://github.com/Semining" target="_blank">GitHub</a></div>
   </footer>
 </div>
 <!-- ===================== PROJECT 03 ===================== -->
@@ -961,7 +962,7 @@ AS-IS 연간 416시간·$88,400이라는 숫자는 단순 비교용이 아니었
 
   <footer>
     <div class="footer-copy">Semin Seo — 2026</div>
-    <div class="footer-links"><a href="#">LinkedIn</a><a href="#">GitHub</a></div>
+    <div class="footer-links"><a href="https://linkedin.com/in/semin-seo" target="_blank">LinkedIn</a><a href="https://github.com/Semining" target="_blank">GitHub</a></div>
   </footer>
 </div>
 
